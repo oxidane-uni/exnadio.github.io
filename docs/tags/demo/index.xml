@@ -7,11 +7,12 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
-</copyright><atom:link href="/tags/demo/index.xml" rel="self" type="application/rss+xml" />
+</copyright>
+    <lastBuildDate>Sun, 25 Jul 2021 18:16:01 +0800</lastBuildDate><atom:link href="/tags/demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>nihao</title>
       <link>/posts/%E4%BD%A0%E5%A5%BD/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 25 Jul 2021 18:16:01 +0800</pubDate>
       
       <guid>/posts/%E4%BD%A0%E5%A5%BD/</guid>
       <description>一个Demo，没有任何东西（这个地方还有不是Demo的东西吗？）</description>

@@ -1,9 +1,9 @@
 ---
 title: Vintage
 draft: false
-slogan: Where nothing is compromised
-imgLeft: images/hero-left.jpg
-imgRight: images/hero-right.jpg
+slogan: 
+imgLeft: home/front.jpg
+imgRight: home/back.jpg
 
 weight: 4
 widget:
