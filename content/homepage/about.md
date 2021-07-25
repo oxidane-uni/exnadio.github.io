@@ -9,7 +9,7 @@ social:
   - icon: envelope
     iconPack: fas
     url: 
-  - icon: bilibili
+  - icon: twitter
     iconPack: fab
     url: 
   - icon: github
