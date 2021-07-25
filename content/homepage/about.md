@@ -2,14 +2,14 @@
 title: Oxidane-uni
 draft: false
 avatar: avatar/1.jpg
-bio: 幸福往往是莫得透彻，而敬业的心却常常隐藏
+bio: 幸福往往是摸得透彻，而敬业的心却常常隐藏
 role: 优质韭菜
 
 social:
   - icon: envelope
     iconPack: fas
     url: 
-  - icon: twitter
+  - icon: bilibili
     iconPack: fab
     url: 
   - icon: github
