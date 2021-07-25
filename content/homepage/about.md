@@ -2,7 +2,7 @@
 title: Oxidane-uni
 draft: false
 avatar: avatar/1.jpg
-bio: 晚上好
+bio: 幸福往往是莫得透彻，而敬业的心却常常隐藏
 role: 优质韭菜
 
 social:

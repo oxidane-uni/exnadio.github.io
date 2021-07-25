@@ -1,8 +1,8 @@
 ---
 title: Oxidane
-role: 
+role: 优质燃料
 avatar: avatar/1.jpg
-bio: 
+bio: 幸福往往是莫得透彻，而敬业的心却常常隐藏
 organization:
   name: 
   url: 
@@ -15,6 +15,6 @@ social:
     url: 
   - icon: github
     iconPack: fab
-    url: 
+    url: https://github.com/oxidane-uni
 ---
 
