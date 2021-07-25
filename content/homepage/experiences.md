@@ -9,6 +9,11 @@ experiences:
     dates:
     location:  
     writeup: 
+  - title: 友情链接：
+    organization:
+      name: 薄荷博客
+      url: https://coremint.co/
+    
   
       
     
