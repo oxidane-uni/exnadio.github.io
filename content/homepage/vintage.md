@@ -1,7 +1,7 @@
 ---
 title: Vintage
 draft: false
-slogan: 
+slogan: 我看不懂，但我大受震撼。
 imgLeft: home/front.jpg
 imgRight: home/back.jpg
 
