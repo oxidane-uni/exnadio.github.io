@@ -3,6 +3,7 @@ title: Oxidane-uni
 draft: false
 avatar: avatar/1.jpg
 bio: 晚上好
+role: 优质韭菜
 
 social:
   - icon: envelope
@@ -13,7 +14,7 @@ social:
     url: 
   - icon: github
     iconPack: fab
-    url: 
+    url: https://github.com/oxidane-uni
 
 weight: 1
 widget:
