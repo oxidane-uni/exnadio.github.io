@@ -42,12 +42,10 @@ math:
 comment:
   # Options: disqus, commento, valine and utterances.
   handler: utterances
-  repo: oxidane-uni/forUtterances
-  issue-term: pathname
-  theme: eureka
-
-
-
+  utterances:
+   repo: oxidane-uni/forUtterances
+   issue-term: pathname
+   theme: eureka
   # disqus:
   #   shortname:
 
