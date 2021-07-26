@@ -40,5 +40,7 @@ taxonomies:
   series: series
   author: authors
 
+publishDir: docs
+
 build:
   useResourceCacheWhen: always
