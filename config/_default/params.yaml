@@ -1,6 +1,6 @@
 mainSections:
   - posts
-description: Eureka is a elegant and powerful theme for Hugo.
+description: Oops.
 
 repoEditURL:
 
@@ -14,7 +14,7 @@ colorScheme:
 # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
 siteType: Person
 icon: images/icon.png
-publisherName: C. Wang
+publisherName: Enadix O
 publisherLogo:
 
 highlight:
@@ -41,7 +41,12 @@ math:
 
 comment:
   # Options: disqus, commento, valine and utterances.
-  handler:
+  handler: utterances
+  repo: oxidane-uni/forUtterances
+  issue-term: pathname
+  theme: eureka
+
+
 
   # disqus:
   #   shortname:
@@ -49,10 +54,7 @@ comment:
   # utterances:
   #   # Browse https://utteranc.es/ to see the options available.
   #   # If you want the color scheme of utterances to follow eureka's, you can set `theme: eureka`.
-  #   repo:
-  #   issue-term:
-  #   theme:
-
+  
   # commento:
   #   # If self-hosting, please enter the url (e.g. https://commento.example.com) here. Otherwise leave empty.
   #   url:
