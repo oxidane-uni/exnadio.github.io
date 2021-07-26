@@ -15,7 +15,7 @@ enableGitInfo: false
 summaryLength: 75
 
 defaultContentLanguage: en
-hasCJKLanguage: true # Set `true` for Chinese/Japanese/Korean.
+hasCJKLanguage: false # Set `true` for Chinese/Japanese/Korean.
 defaultContentLanguageInSubdir: false
 
 # Uncomment for google analytics
@@ -42,5 +42,3 @@ taxonomies:
 
 build:
   useResourceCacheWhen: always
-
-publishDir: docs

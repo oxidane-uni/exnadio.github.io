@@ -11,7 +11,7 @@ experiences:
     writeup: 
   - title: 友情链接：
     organization:
-      name: 薄荷博客
+      name: 薄荷薄客
       url: https://coremint.co/
     
   

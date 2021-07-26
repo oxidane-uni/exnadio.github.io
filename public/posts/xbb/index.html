@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang='en' ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>一点胡扯 | ExnadiO</title>
+
+<meta name="generator" content="Hugo Eureka 0.8.2" />
+<link rel="stylesheet" href="/css/eureka.min.css">
+<script defer src="/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dart.min.js"
+     crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
+  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+
+
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icon_hu3804dfb2f2fdd286e4893a1c0b7c70c4_15418_32x32_fill_box_center_3.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icon_hu3804dfb2f2fdd286e4893a1c0b7c70c4_15418_180x180_fill_box_center_3.png">
+
+<meta name="description"
+  content="搞鼓了两天，终于把这个博客搞得像样了一点。虽然说不是什么“文人雅士”，但是还是写点什么东西，纪念一下。没什么行文思路，纯粹胡扯。
+梦开始的地方 其实这个博客很早就存在了，大概是19年左右吧。我记得是孙伯赫最初开始整博客的时候，我也跟着建了一个。非常简陋，只有一个Hello world界面。然后我就晾着不管了。不过最近莫名地感兴趣，于是决定进行一个网站的翻新，让它变得更像一个博客。
+过程  梦好做，屎难吃。
+ 最后选择了使用Hugo来翻新。在此感谢土豆的教程，帮大忙了。
+Hugo的配置其实很简单，随着教程走，简直就像过大清早的马路一样简单。而且很好用，是好文明。
+但是我完全没学过这些玩意，实在是技术苦手，还是碰了很多壁。
+最大的问题来自于我选择的Eureka主题，虽说有详细的教程，可是有些时候我按教程上所说的做了，却没有效果。比如这个网站的icon，在教程里说是可以自定义的，然而实际上当我在config文件里修改的时候就会疯狂报错，最后只能替换掉主题里自带的图片草草了事（It just worked）。
+还有很多莫名其妙的问题，可我完全不知道到底发生了什么，只能一点一点的摸索，往往要花费几个小时（在网上还搜不到解决方案，简直就是折磨）。感觉就是全麻，只会一个Ctrl&#43;C和Ctrl&#43;V，而且还会再附加上我自己的一堆错误，比如说不小心把cmd关掉，一切又得重头开始。
+甚至就在写这篇文章的时候，又出现了奇怪的问题，导致我又花费了几个小时。本来打算删库跑路，不过还是坚持下来了。现在想来，他妈的。好在看起来一切都好起来了，结果好一切都好嘛。
+不过评论区功能我还没加，估计又得搞好久。
+其实也不是没考虑过完全的建站，但是那方面我也是完全不懂，而且这个博客能不能Last for long也是个问题，所以先用Github Pages试试水。
+不过Github Pages其实也有很多的问题，由于某些众所周知的原因这玩意时而能上，时而不能上。但是也就不挑三拣四了
+最后 希望这个博客能比Telegram频道活得长吧（笑）。">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"一点胡扯",
+      "item":"/posts/xbb/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/xbb/"
+    },
+    "headline": "一点胡扯 | ExnadiO","datePublished": "2021-07-26T13:06:57+08:00",
+    "dateModified": "2021-07-26T13:06:57+08:00",
+    "wordCount":  23 ,
+    "author": {
+        "@type": "Person",
+        "name": "oxidane"
+    },
+    "publisher": {
+        "@type": "Person",
+        "name": "C. Wang",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "/images/icon.png"
+        }
+        },
+    "description": "搞鼓了两天，终于把这个博客搞得像样了一点。虽然说不是什么“文人雅士”，但是还是写点什么东西，纪念一下。没什么行文思路，纯粹胡扯。\n梦开始的地方 其实这个博客很早就存在了，大概是19年左右吧。我记得是孙伯赫最初开始整博客的时候，我也跟着建了一个。非常简陋，只有一个Hello world界面。然后我就晾着不管了。不过最近莫名地感兴趣，于是决定进行一个网站的翻新，让它变得更像一个博客。\n过程  梦好做，屎难吃。\n 最后选择了使用Hugo来翻新。在此感谢土豆的教程，帮大忙了。\nHugo的配置其实很简单，随着教程走，简直就像过大清早的马路一样简单。而且很好用，是好文明。\n但是我完全没学过这些玩意，实在是技术苦手，还是碰了很多壁。\n最大的问题来自于我选择的Eureka主题，虽说有详细的教程，可是有些时候我按教程上所说的做了，却没有效果。比如这个网站的icon，在教程里说是可以自定义的，然而实际上当我在config文件里修改的时候就会疯狂报错，最后只能替换掉主题里自带的图片草草了事（It just worked）。\n还有很多莫名其妙的问题，可我完全不知道到底发生了什么，只能一点一点的摸索，往往要花费几个小时（在网上还搜不到解决方案，简直就是折磨）。感觉就是全麻，只会一个Ctrl\u002bC和Ctrl\u002bV，而且还会再附加上我自己的一堆错误，比如说不小心把cmd关掉，一切又得重头开始。\n甚至就在写这篇文章的时候，又出现了奇怪的问题，导致我又花费了几个小时。本来打算删库跑路，不过还是坚持下来了。现在想来，他妈的。好在看起来一切都好起来了，结果好一切都好嘛。\n不过评论区功能我还没加，估计又得搞好久。\n其实也不是没考虑过完全的建站，但是那方面我也是完全不懂，而且这个博客能不能Last for long也是个问题，所以先用Github Pages试试水。\n不过Github Pages其实也有很多的问题，由于某些众所周知的原因这玩意时而能上，时而不能上。但是也就不挑三拣四了\n最后 希望这个博客能比Telegram频道活得长吧（笑）。"
+}
+</script><meta property="og:title" content="一点胡扯 | ExnadiO" />
+<meta property="og:type" content="article" />
+
+
+<meta property="og:image" content="/images/icon.png">
+
+
+<meta property="og:url" content="/posts/xbb/" />
+
+
+
+
+<meta property="og:description" content="搞鼓了两天，终于把这个博客搞得像样了一点。虽然说不是什么“文人雅士”，但是还是写点什么东西，纪念一下。没什么行文思路，纯粹胡扯。
+梦开始的地方 其实这个博客很早就存在了，大概是19年左右吧。我记得是孙伯赫最初开始整博客的时候，我也跟着建了一个。非常简陋，只有一个Hello world界面。然后我就晾着不管了。不过最近莫名地感兴趣，于是决定进行一个网站的翻新，让它变得更像一个博客。
+过程  梦好做，屎难吃。
+ 最后选择了使用Hugo来翻新。在此感谢土豆的教程，帮大忙了。
+Hugo的配置其实很简单，随着教程走，简直就像过大清早的马路一样简单。而且很好用，是好文明。
+但是我完全没学过这些玩意，实在是技术苦手，还是碰了很多壁。
+最大的问题来自于我选择的Eureka主题，虽说有详细的教程，可是有些时候我按教程上所说的做了，却没有效果。比如这个网站的icon，在教程里说是可以自定义的，然而实际上当我在config文件里修改的时候就会疯狂报错，最后只能替换掉主题里自带的图片草草了事（It just worked）。
+还有很多莫名其妙的问题，可我完全不知道到底发生了什么，只能一点一点的摸索，往往要花费几个小时（在网上还搜不到解决方案，简直就是折磨）。感觉就是全麻，只会一个Ctrl&#43;C和Ctrl&#43;V，而且还会再附加上我自己的一堆错误，比如说不小心把cmd关掉，一切又得重头开始。
+甚至就在写这篇文章的时候，又出现了奇怪的问题，导致我又花费了几个小时。本来打算删库跑路，不过还是坚持下来了。现在想来，他妈的。好在看起来一切都好起来了，结果好一切都好嘛。
+不过评论区功能我还没加，估计又得搞好久。
+其实也不是没考虑过完全的建站，但是那方面我也是完全不懂，而且这个博客能不能Last for long也是个问题，所以先用Github Pages试试水。
+不过Github Pages其实也有很多的问题，由于某些众所周知的原因这玩意时而能上，时而不能上。但是也就不挑三拣四了
+最后 希望这个博客能比Telegram频道活得长吧（笑）。" />
+
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="ExnadiO" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2021-07-26T13:06:57&#43;08:00" />
+
+
+<meta property="article:modified_time" content="2021-07-26T13:06:57&#43;08:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
+        document.getElementsByTagName('html')[0].classList.add('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">ExnadiO</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/#about" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">About</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  mr-4">Posts</a>
+            <a href="/docs/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">Docs</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-adjust"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    } else if (storageColorScheme == "Dark") {
+        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.setAttribute("data-icon", 'moon')
+        element.firstElementChild.classList.add('fa-moon')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="flex-grow pt-16">
+    <div class="pl-scrollbar">
+      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">一点胡扯</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2021-07-26</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1 min read</span>
+    </div>
+    
+    
+
+    
+</div>
+        
+        
+        
+
+        <div class="content">
+            <p>搞鼓了两天，终于把这个博客搞得像样了一点。虽然说不是什么“文人雅士”，但是还是写点什么东西，纪念一下。没什么行文思路，纯粹胡扯。</p>
+<h2 id="梦开始的地方">梦开始的地方</h2>
+<p>其实这个博客很早就存在了，大概是19年左右吧。我记得是孙伯赫最初开始整博客的时候，我也跟着建了一个。非常简陋，只有一个Hello world界面。然后我就晾着不管了。<img src="/forposts/zouxian.jpg" alt="mole"></p>
+<p>不过最近莫名地感兴趣，于是决定进行一个网站的翻新，让它变得更像一个博客。</p>
+<h2 id="过程">过程</h2>
+<blockquote>
+<p>梦好做，屎难吃。</p>
+</blockquote>
+<p>最后选择了使用Hugo来翻新。在此感谢土豆的<a href="https://zhajiman.github.io/post/rebuild_blog/">教程</a>，帮大忙了。</p>
+<p>Hugo的配置其实很简单，随着教程走，简直就像过大清早的马路一样简单。而且很好用，是好文明。</p>
+<p>但是我完全没学过这些玩意，实在是技术苦手，还是碰了很多壁。</p>
+<p>最大的问题来自于我选择的Eureka主题，虽说有详细的<a href="https://www.wangchucheng.com/zh/docs/hugo-eureka/">教程</a>，可是有些时候我按教程上所说的做了，却没有效果。比如这个网站的icon，在教程里说是可以自定义的，然而实际上当我在config文件里修改的时候就会疯狂报错，最后只能替换掉主题里自带的图片草草了事（It just worked）。</p>
+<p>还有很多莫名其妙的问题，可我完全不知道到底发生了什么，只能一点一点的摸索，往往要花费几个小时（在网上还搜不到解决方案，简直就是折磨）。感觉就是全麻，只会一个Ctrl+C和Ctrl+V，而且还会再附加上我自己的一堆错误，比如说不小心把cmd关掉，一切又得重头开始。</p>
+<p>甚至就在写这篇文章的时候，又出现了奇怪的问题，导致我又花费了几个小时。本来打算删库跑路，不过还是坚持下来了。现在想来，他妈的。<img src="/forposts/angry.gif" alt="mamade"></p>
+<p>好在<strong>看起来</strong>一切都好起来了，结果好一切都好嘛。</p>
+<p>不过评论区功能我还没加，估计又得搞好久。</p>
+<p>其实也不是没考虑过完全的建站，但是那方面我也是完全不懂，而且这个博客能不能Last for long也是个问题，所以先用Github Pages试试水。</p>
+<p>不过Github Pages其实也有很多的问题，由于某些众所周知的原因这玩意时而能上，时而不能上。但是也就不挑三拣四了</p>
+<h2 id="最后">最后</h2>
+<p>希望这个博客能比Telegram频道活得长吧（笑）。</p>
+
+        </div>
+        
+        
+        
+
+
+        
+        
+        <div class="py-2">
+    
+    <div class="flex flex-col md:flex-row items-center my-8">
+        <a href="/authors/oxidane/" class="w-24 h-24 md:mr-4">
+            
+            
+            <img src="/avatar/1.jpg" class="w-full bg-primary-bg rounded-full" alt="Avatar">
+            
+        </a>
+        <div class="w-full md:w-auto mt-4 md:mt-0">
+            <a href="/authors/oxidane/" class="block font-bold text-lg pb-1 mb-2 border-b">Oxidane</a>
+            <span class="block pb-2">幸福往往是摸得透彻，而敬业的心却常常隐藏</span>
+            
+            
+            
+            
+            
+            <a href="" class="mr-1">
+                <i class="fas fa-envelope"></i>
+            </a>
+            
+            
+            
+            
+            
+            <a href="" class="mr-1">
+                <i class="fab fa-twitter"></i>
+            </a>
+            
+            
+            
+            
+            
+            <a href="https://github.com/oxidane-uni" class="mr-1">
+                <i class="fab fa-github"></i>
+            </a>
+            
+        </div>
+    </div>
+    
+</div>
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">Next</span>
+        <a href="/posts/nihao/" class="block">Nihao</a>
+        
+    </div>
+</div>
+
+        
+
+
+
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">On This Page</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#梦开始的地方">梦开始的地方</a></li>
+    <li><a href="#过程">过程</a></li>
+    <li><a href="#最后">最后</a></li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
+        
+    </div>
+    
+
+    
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+      </div>
+    </div>
+    
+  </main>
+  <footer class="pl-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text">&copy; 2021 <a href="https://www.wangchucheng.com/">C. Wang</a> and <a href="https://www.ruiqima.com/">R. Ma</a>
+ &middot;  Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>

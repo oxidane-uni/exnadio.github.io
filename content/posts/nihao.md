@@ -1,5 +1,5 @@
 ---
-title: nihao
+title: Nihao
 description:
 toc: true
 authors: oxidane
