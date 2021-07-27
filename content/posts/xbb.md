@@ -3,13 +3,13 @@ title: 一点胡扯
 description:
 toc: true
 authors: oxidane
-tags: 
+tags: [Demo]     
 categories: 
 series: 
 date: 2021-07-26T13:06:57+08:00
 lastmod: 2021-07-26T13:06:57+08:00
 featuredVideo:
-featuredImage:
+featuredImage: 
 draft: false
 ---
 

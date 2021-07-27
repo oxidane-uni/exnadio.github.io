@@ -2,11 +2,11 @@
 title: Pages
 draft: false
 # Section you want to display
-section: posts
+section: Posts
 # Pages count
-count: 5
+count: 10
 # Options: card, plain and masonry.
-style: plain
+style: card
 
 weight: 2
 widget:
