@@ -9,9 +9,6 @@ social:
   - icon: envelope
     iconPack: fas
     url: https://space.bilibili.com/271991289
-  - icon: twitter
-    iconPack: fab
-    url: 
   - icon: github
     iconPack: fab
     url: https://github.com/oxidane-uni
@@ -32,12 +29,12 @@ widget:
   background:
     # Options: primary, secondary, tertiary or any valid color value. Default is primary.
     color: secondary
-    image:
+    image: home/front.jpg
     # Options: auto, cover and contain. Default is auto.
-    size:
+    size: 
     # Options: center, top, right, bottom, left.
-    position:
+    position: center
     # Options: fixed, local, scroll.
-    attachment: 
+    attachment:  
 ---
 
