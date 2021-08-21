@@ -1,5 +1,5 @@
 ---
-title: 苹果已经死了
+title: 
 description:
 toc: true
 authors: oxidane

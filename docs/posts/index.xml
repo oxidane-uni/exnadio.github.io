@@ -8,18 +8,23 @@
     <language>en</language>
     <copyright>&amp;copy; 2021 &lt;a href=&#34;https://www.wangchucheng.com/&#34;&gt;C. Wang&lt;/a&gt; and &lt;a href=&#34;https://www.ruiqima.com/&#34;&gt;R. Ma&lt;/a&gt;
 </copyright>
-    <lastBuildDate>Mon, 26 Jul 2021 13:06:57 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Aug 2021 22:05:12 +0800</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>随便写写</title>
+      <link>/posts/liao/</link>
+      <pubDate>Sat, 21 Aug 2021 22:05:12 +0800</pubDate>
+      
+      <guid>/posts/liao/</guid>
+      <description>大概你oxidane的确是死了 然而站终究还是没死，只是我摸了。</description>
+    </item>
+    
     <item>
       <title>一点胡扯</title>
       <link>/posts/xbb/</link>
       <pubDate>Mon, 26 Jul 2021 13:06:57 +0800</pubDate>
       
       <guid>/posts/xbb/</guid>
-      <description>搞鼓了两天，终于把这个博客搞得像样了一点。虽然说不是什么“文人雅士”，但是还是写点什么东西，纪念一下。没什么行文思路，纯粹胡扯。
-梦开始的地方 其实这个博客很早就存在了，大概是19年左右吧。我记得是孙伯赫最初开始整博客的时候，我也跟着建了一个。非常简陋，只有一个Hello world界面。然后我就晾着不管了。不过最近莫名地感兴趣，于是决定进行一个网站的翻新，让它变得更像一个博客。
-过程  梦好做，屎难吃。
- 最后选择了使用Hugo来翻新。在此感谢土豆的教程，帮大忙了。
-Hugo的配置其实很简单，随着教程走，简直就像过大清早的马路一样简单。而且很好用，是好文明。</description>
+      <description>搞鼓了两天，终于把这个博客搞得像样了一点。虽然说不是什么“文人雅士”，但是还是写点什么东西，纪念一下。没什么行文思路，纯粹胡扯。</description>
     </item>
     
     <item>
