@@ -15,6 +15,7 @@ menu:
         params:
             icon: link
 
+readingTime: false
 comments: false
 ---
 
