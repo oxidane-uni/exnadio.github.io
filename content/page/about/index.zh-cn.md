@@ -1,5 +1,8 @@
 ---
 title: 关于
+readingTime: false
+comments: false
+image: ./images/4featureimg/zhongju.png
 menu:
     main: 
         weight: -90
@@ -7,4 +10,4 @@ menu:
             icon: user
 ---
 
-This is a test page for i18n support.
+**优质韭菜**
