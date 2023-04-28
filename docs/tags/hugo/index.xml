@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Hugo on Exnadio&#39;s Blog</title>
-        <link>https://example.com/tags/hugo/</link>
+        <link>https://oxidane-uni.github.io/tags/hugo/</link>
         <description>Recent content in Hugo on Exnadio&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 22 Apr 2023 14:56:05 +0800</lastBuildDate><atom:link href="https://example.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Apr 2023 14:56:05 +0800</lastBuildDate><atom:link href="https://oxidane-uni.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>使用 Hugo 对博客的重建与 Stack 主题优化记录</title>
-        <link>https://example.com/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/</link>
+        <link>https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/</link>
         <pubDate>Sat, 22 Apr 2023 14:56:05 +0800</pubDate>
         
-        <guid>https://example.com/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/</guid>
-        <description>&lt;img src="https://example.com/images/4featureimg/azl.jpg" alt="Featured image of post 使用 Hugo 对博客的重建与 Stack 主题优化记录" /&gt;&lt;h2 id=&#34;为何再次重建博客&#34;&gt;为何再次重建博客？&lt;/h2&gt;
+        <guid>https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;img src="https://oxidane-uni.github.io/images/4featureimg/azl.jpg" alt="Featured image of post 使用 Hugo 对博客的重建与 Stack 主题优化记录" /&gt;&lt;h2 id=&#34;为何再次重建博客&#34;&gt;为何再次重建博客？&lt;/h2&gt;
 &lt;p&gt;是，我知道我上次更新博客是2021年，但是这个博客我的确是没有忘的。&lt;del&gt;（主播只是入狱了）&lt;/del&gt;&lt;br&gt;
 实际上这个博客是我在21年暑假用Hugo建的，使用的是Eureka主题。整体效果确实非常不错，但遗憾的是配置过程及其奇怪：虽说有专门的&lt;a class=&#34;link&#34; href=&#34;https://www.wangchucheng.com/zh/docs/hugo-eureka/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;说明文档&lt;/a&gt;,但是于我而言这玩意写得实在是不太友好&lt;del&gt;太坏了，准备写邮件去骂.jpg&lt;/del&gt;，所以当时我的配置过程纯粹靠蒙，虽说最后还是搞出来了，但确实是一种折磨。&lt;br&gt;
@@ -29,7 +29,7 @@
     &gt;releases&lt;/a&gt;和 Git 的&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官网&lt;/a&gt;都能很方便地下载。我选择的是 hugo_extended_0.111.2_windows-amd64.zip
 版本，以便后续折腾。下载完成后将压缩包里的东西解压至你喜欢的目录，再将该目录的路径添加到环境变量中以便后续调用。至于 Git 的安装，我就不再赘述了。&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/path.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/path.png&#34;
 	
 	
 	
@@ -110,7 +110,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;即可建立一个本地服务器。&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/hugoserver.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/hugoserver.png&#34;
 	
 	
 	
@@ -127,7 +127,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;code&gt;hugo new post/rebuild_blog.md&lt;/code&gt;
 打开后你会发现生成的Markdown文档带有一段FrontMatter部分，具体的意思可以在&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/writing/frontmatter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这里&lt;/a&gt;找到。大体上可以认为是文档的一些属性。&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/frontmatter.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/frontmatter.png&#34;
 	
 	
 	
@@ -186,7 +186,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;/ol&gt;
 &lt;h2 id=&#34;stack主题自定义&#34;&gt;Stack主题自定义&lt;/h2&gt;
 &lt;p&gt;首先放一下对比图：&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/lightmode_default.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/lightmode_default.png&#34;
 	
 	
 	
@@ -196,7 +196,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 	
 &gt; &lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/lightmode_modified.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/lightmode_modified.png&#34;
 	
 	
 	
@@ -217,7 +217,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;p&gt;因此，想要自定义就很简单了：找到你希望修改的元素和它对应的选择器，重新定义这个选择器即可。&lt;br&gt;
 万幸，目前的浏览器为我们提供了好用的开发者工具。以我现在使用的Edge为例，按下&lt;code&gt;F12&lt;/code&gt;弹出开发者工具，使用左上角的小箭头使你的鼠标变成一个查看器(你也可以使用&lt;code&gt;SHIFT&lt;/code&gt;+&lt;code&gt;CTRL&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt;的组合键)，只要将光标置于你想修改的元素上，就能找到该元素的源代码。&lt;br&gt;
 例如我现在想改浅色模式下的文本颜色，只需选择一段文本,就能在右下角找到它对应的css:&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/css_selected.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/css_selected.png&#34;
 	
 	
 	
@@ -227,7 +227,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 	
 &gt;&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/css_txt.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/css_txt.png&#34;
 	
 	
 	
@@ -239,7 +239,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &gt;&lt;br&gt;
 可以看到文本被指定为&lt;code&gt;---body-text-color&lt;/code&gt;。&lt;br&gt;
 再顺藤摸瓜找到对应的颜色控制：&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/css_color.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/css_color.png&#34;
 	
 	
 	
@@ -287,7 +287,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时就能达到这种效果了：&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/lightmode_modified.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/lightmode_modified.png&#34;
 	
 	
 	
@@ -433,7 +433,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;p&gt;Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失的图标要手动添加。&lt;br&gt;
 例如我想添加一个比比汗丽丽的图标，在&lt;a class=&#34;link&#34; href=&#34;https://tabler-icons.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Tabler官网&lt;/a&gt;搜索发现居然真有：&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/searchresult.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/searchresult.png&#34;
 	
 	
 	
@@ -444,7 +444,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 &gt;&lt;br&gt;
 将svg文件其下载到主题中的&lt;code&gt;.assets\icons&lt;/code&gt;中，再调用即可。&lt;br&gt;
-&lt;img src=&#34;https://example.com/images/4post/implement.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/implement.png&#34;
 	
 	
 	
@@ -466,7 +466,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;li&gt;Category机制还没搞懂&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;以上，&lt;strong&gt;下次&lt;/strong&gt;大概的确会修复！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://example.com/images/4post/nextepisode.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/nextepisode.png&#34;
 	
 	
 	

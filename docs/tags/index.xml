@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on Exnadio&#39;s Blog</title>
-        <link>https://example.com/tags/</link>
+        <link>https://oxidane-uni.github.io/tags/</link>
         <description>Recent content in Tags on Exnadio&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sat, 22 Apr 2023 14:56:05 +0800</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 22 Apr 2023 14:56:05 +0800</lastBuildDate><atom:link href="https://oxidane-uni.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Hugo</title>
-        <link>https://example.com/tags/hugo/</link>
+        <link>https://oxidane-uni.github.io/tags/hugo/</link>
         <pubDate>Sat, 22 Apr 2023 14:56:05 +0800</pubDate>
         
-        <guid>https://example.com/tags/hugo/</guid>
+        <guid>https://oxidane-uni.github.io/tags/hugo/</guid>
         <description></description>
         </item>
         

@@ -1,4 +1,4 @@
-baseurl: https://example.com
+baseurl: https://oxidane-uni.github.io/
 languageCode: zh-cn
 theme: hugo-theme-stack
 paginate: 5
@@ -41,7 +41,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon:  # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
+    favicon: favicon/favicon.png # e.g.: favicon placed in `static/favicon.ico` of your site folder, then set this field to `/favicon.ico` (`/` is necessary)
 
     footer:
         since: 2020
@@ -69,8 +69,8 @@ params:
             default: Licensed under CC BY-NC-SA 4.0
 
     comments:
-        enabled: false
-        provider: disqus
+        enabled: true
+        provider: utterances
 
         disqusjs:
             shortname:
@@ -80,9 +80,9 @@ params:
             adminLabel:
 
         utterances:
-            repo:
+            repo: oxidane-uni/forUtterances
             issueTerm: pathname
-            label:
+            theme: hugo-theme-stack
 
         remark42:
             host:
