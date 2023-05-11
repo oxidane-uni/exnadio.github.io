@@ -14,7 +14,7 @@ draft: false
 
 ## 为何再次重建博客？  
 是，我知道我上次更新博客是2021年，但是这个博客我的确是没有忘的。~~（主播只是入狱了）~~  
-实际上这个博客是我在21年暑假用Hugo建的，使用的是Eureka主题。整体效果确实非常不错，但遗憾的是配置过程及其奇怪：虽说有专门的[说明文档](https://www.wangchucheng.com/zh/docs/hugo-eureka/),但是于我而言这玩意写得实在是不太友好~~太坏了，准备写邮件去骂.jpg~~，所以当时我的配置过程纯粹靠蒙，虽说最后还是搞出来了，但确实是一种折磨。  
+实际上这个博客是我在21年暑假用Hugo建的，使用的是Eureka主题。整体效果确实非常不错，但遗憾的是配置过程极其奇怪：虽说有专门的[说明文档](https://www.wangchucheng.com/zh/docs/hugo-eureka/),但是于我而言这玩意写得实在是不太友好~~太坏了，准备写邮件去骂.jpg~~，所以当时我的配置过程纯粹靠蒙，虽说最后还是搞出来了，但确实是一种折磨。  
 正好最近几天又想写博客了，就把Hugo又下了回来，结果升级Eureka主题的时候又折磨了好久，还是没整明白。
 
 > 使用git submodule下来的Eureka配置后存在的大量报错，不断提示module未定义，反正也看不懂，干脆换主题了。  
@@ -60,7 +60,7 @@ draft: false
 git init
 git submodule add https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 ```  
-等待下载完成后，便可以进行配置了。假如你想用其他方式安装，也可以参考[这里](https://stack.jimmycai.com/guide/getting-started)。  
+等待下载完成后，便可以进行[配置](##主题配置历程)了。假如你想用其他方式安装，也可以参考[这里](https://stack.jimmycai.com/guide/getting-started)。  
 Stack本身有全英文的[说明文档](https://stack.jimmycai.com/config/)，我建议是将`./themes/hugo-theme-stack/exampleSite/content`和`./themes/hugo-theme-stack/config.yaml`直接夺舍，根据说明与需求修改，会剩下很多时间。  
 > 根据 Stack 的说明文档，Stack后续将改用.toml格式的Config文件，不过其配置步骤基本相同。 
 
@@ -117,6 +117,16 @@ hugo
 1. `git push -u origin master //我采用了master分支`后是要验证github账号的（也许只有首次有？），假如你没有，那么我建议你读第2点。
 2. Github是有带GUI的客户端的，git苦手可以考虑用这个。  
 
+## 主题配置历程  
+由于主题的配置是个个体差异极大的过程，因此我不会事无巨细地说明每一个过程，而是说明几个小点。
+
+### 网站图标更改  
+其实很简单，但是我被一个issue误导了，哈哈。  
+将图片生成的favicon文件夹放在`./static`文件夹下，然后在`cofig.yaml`下指定：`favicon: /favicon/favicon.ico `就行。
+
+### 评论系统之接入 
+忘了Uttrances怎么配置的了啊嗯，鸽了。
+
 
 ## Stack主题自定义  
 首先放一下对比图：  
@@ -158,10 +168,48 @@ hugo
 此时就能达到这种效果了：  
 ![lightmode_modified](./images/4post/lightmode_modified.png)  
 
+Tag的修改我也说下，用上面的方法找到代码，发现：  
+![Tag colour](./images/4post/tagcolorcode.png)  
+> Is this LGBT light?  
+
+然后把能找到这些颜色的地方全图图了：  
+```css
+.article-list article:nth-child(n) .article-category a {
+  background: #1B365D;
+  color: #fff;
+}
+
+.article-category a, .article-tags a {
+  background-color: #1B365D;
+  color: #fff;
+}
+
+```
+
+**Note:**  
+改完之后我发现分类的 Tag 还是存在问题，虽说前几个颜色是对的，但是越往后走居然开始变色了：  
+![变色Tag](./images/4post/case.png)  
+此时即使在custom.scss中指定了颜色也没啥用，看了下这玩意居然在是element.style写死的，多少有点幽默：  
+![css](./images/4post/element_style.png)  
+于是便需要在源代码后面加上`!important`，Done。  
+现代码如下：
+```css
+.article-list article:nth-child(n) .article-category a {
+  background: #1B365D!important;
+  color: #fff;
+}
+
+.article-category a, .article-tags a {
+  background-color: #1B365D!important;
+  color: #fff;
+}
+
+```
+
 ### 修改网站布局  
 原先挤满所有空间的布局我不喜欢，遂改。
 这里使用[仙贝的代码](https://xrg.fj.cn/p/hugo-stack%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E5%B0%8F%E8%AE%B0/#%E4%B8%BB%E9%A1%B5%E5%B8%83%E5%B1%80)，一样是在`custom.scss`中添加：
-```scss
+```css
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -226,19 +274,71 @@ html{
 }
 ```
 
-### 图标添加  
+### 图标添加与修改  
 Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失的图标要手动添加。  
 例如我想添加一个比比汗丽丽的图标，在[Tabler官网](https://tabler-icons.io/)搜索发现居然真有：  
 ![搜索结果](./images/4post/searchresult.png)  
-将svg文件其下载到主题中的`.assets\icons`中，再调用即可。  
+将svg文件其下载到`.\themes\hugo-theme-stack\assets\icons`中，再调用即可。  
 ![调用](./images/4post/implement.png)
+  
+另外，我也不是很喜欢自带的深色模式切换开关，以我个人的的观点来看，这玩意太不直观了：  
+![原版]()  
+图标的添加方式就不再赘述，我这里选的是"sun-high"和"moon-stars"这两个图标。
+> 观察网页的CSS可以发现：深色模式下图标的切换就是“一个显示，一个隐藏”，在相关文件中指定该用的图标即可。
+
+作者将这个开关做在了侧边栏里，因而直接在有关的`.\assets\scss\partials\sidebar.scss`和`\layouts\partials\sidebar\left.html`里指定图标即可:
+``
+```css
+/* .\assets\scss\partials\sidebar.scss Line 154*/
+[data-scheme="dark"] {
+    #dark-mode-toggle {
+        color: var(--accent-color);
+        font-weight: 700;
+
+        .icon-tabler-sun-high {
+            display: none;
+        }
+
+        .icon-tabler-moon-stars {
+            display: unset;
+        }
+    }
+}
+
+#dark-mode-toggle {
+    margin-top: auto;
+    color: var(--body-text-color);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: var(--menu-icon-separation);
+
+    .icon-tabler-moon-stars {
+        display: none;
+    }
+}
+```  
+
+```html  
+<!---.\layouts\partials\sidebar\left.html Line 91--->
+{{ if (default false .Site.Params.colorScheme.toggle) }}
+  <li id="dark-mode-toggle">
+    {{ partial "helper/icon" "sun-high" }}
+    {{ partial "helper/icon" "moon-stars" }}
+    <span>{{ T "darkMode" }}</span>
+  </li>
+{{ end }}
+```
+效果如下：  
+![效果图]()  
+顺带一提，想改中文翻译直接去`\i18n\zh-cn.yaml`中修改即可（暗色模式这翻译也太怪了）。
 
 ## 目前仍未完成的部分  
 当然目前这个网站仍存在以下问题以及遗憾：  
 1. 过往文章未恢复  
-2. 评论系统未接入  
+2. ~~评论系统未接入~~  
 3. 部分界面还未配置好 
-4. 网站图标未设置（其实是还没做） 
+4. ~~网站图标未设置（其实是还没做）~~  
 5. 没有文章修改时间显示
 6. 洋文站点还没完成
 7. Category机制还没搞懂

@@ -24,6 +24,7 @@ menu:
             icon: link
 
 readingTime: false
+newTabs: false
 comments: false
 ---
 

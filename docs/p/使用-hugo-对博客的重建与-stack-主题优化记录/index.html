@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/'>
 
-<link rel="stylesheet" href="/scss/style.min.bfd8101f5c872f05fff45167f63fccc18c1080cdca764cefd74bb9a65bb78eb0.css">
+<link rel="stylesheet" href="/scss/style.min.1263e6f7766f818a44e41c2d4e1440b1638cab4a0521a89f24a24b3962a103b0.css">
 <meta property='og:title' content='使用 Hugo 对博客的重建与 Stack 主题优化记录'>
 <meta property='og:description' content='你不觉得图文无关很酷么？'>
 <meta property='og:url' content='https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/'>
@@ -15,7 +15,7 @@
 <meta name="twitter:title" content="使用 Hugo 对博客的重建与 Stack 主题优化记录">
 <meta name="twitter:description" content="你不觉得图文无关很酷么？"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
-    <link rel="shortcut icon" href="/favicon/favicon.png" />
+    <link rel="shortcut icon" href="/favicon/favicon.ico" />
 
     </head>
     <body class="
@@ -267,23 +267,31 @@
             
             
                 <li id="dark-mode-toggle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="8" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sun-high" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M14.828 14.828a4 4 0 1 0 -5.656 -5.656a4 4 0 0 0 5.656 5.656z" />
+  <path d="M6.343 17.657l-1.414 1.414" />
+  <path d="M6.343 6.343l-1.414 -1.414" />
+  <path d="M17.657 6.343l1.414 -1.414" />
+  <path d="M17.657 17.657l1.414 1.414" />
+  <path d="M4 12h-2" />
+  <path d="M12 4v-2" />
+  <path d="M20 12h2" />
+  <path d="M12 20v2" />
 </svg>
 
 
 
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="16" cy="12" r="2" />
-  <rect x="2" y="6" width="20" height="12" rx="6" />
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon-stars" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+  <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+  <path d="M19 11h2m-1 -1v2" />
 </svg>
 
 
 
-                    <span>暗色模式</span>
+                    <span>深色模式</span>
                 </li>
             
         </div>
@@ -324,18 +332,24 @@
         <li><a href="#发布网站">发布网站</a></li>
       </ol>
     </li>
+    <li><a href="#主题配置历程">主题配置历程</a>
+      <ol>
+        <li><a href="#网站图标更改">网站图标更改</a></li>
+        <li><a href="#评论系统之接入">评论系统之接入</a></li>
+      </ol>
+    </li>
     <li><a href="#stack主题自定义">Stack主题自定义</a>
       <ol>
         <li><a href="#改善浅色模式可读性">改善浅色模式可读性</a></li>
         <li><a href="#修改网站布局">修改网站布局</a></li>
         <li><a href="#老头滚动条修改">老头滚动条修改</a></li>
-        <li><a href="#图标添加">图标添加</a></li>
+        <li><a href="#图标添加与修改">图标添加与修改</a></li>
       </ol>
     </li>
     <li><a href="#目前仍未完成的部分">目前仍未完成的部分</a></li>
     <li><a href="#预告部分">预告部分</a>
       <ol>
-        <li><a href="#主题配置历程">主题配置历程</a></li>
+        <li><a href="#主题配置历程-1">主题配置历程</a></li>
         <li><a href="#markdown小教程">Markdown小教程</a></li>
       </ol>
     </li>
@@ -366,7 +380,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E6%89%8B%E5%86%8C/" >
+            <a href="/categories/%E6%89%8B%E5%86%8C/" style="background-color: #2a9d8f; color: #fff;">
                 手册
             </a>
         
@@ -416,7 +430,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 7 分钟
+                    阅读时长: 9 分钟
                 </time>
             </div>
         
@@ -433,7 +447,7 @@
     
     <h2 id="为何再次重建博客">为何再次重建博客？</h2>
 <p>是，我知道我上次更新博客是2021年，但是这个博客我的确是没有忘的。<del>（主播只是入狱了）</del><br>
-实际上这个博客是我在21年暑假用Hugo建的，使用的是Eureka主题。整体效果确实非常不错，但遗憾的是配置过程及其奇怪：虽说有专门的<a class="link" href="https://www.wangchucheng.com/zh/docs/hugo-eureka/"  target="_blank" rel="noopener"
+实际上这个博客是我在21年暑假用Hugo建的，使用的是Eureka主题。整体效果确实非常不错，但遗憾的是配置过程极其奇怪：虽说有专门的<a class="link" href="https://www.wangchucheng.com/zh/docs/hugo-eureka/"  target="_blank" rel="noopener"
     >说明文档</a>,但是于我而言这玩意写得实在是不太友好<del>太坏了，准备写邮件去骂.jpg</del>，所以当时我的配置过程纯粹靠蒙，虽说最后还是搞出来了，但确实是一种折磨。<br>
 正好最近几天又想写博客了，就把Hugo又下了回来，结果升级Eureka主题的时候又折磨了好久，还是没整明白。</p>
 <blockquote>
@@ -510,7 +524,7 @@
 </span></span><span class="line"><span class="cl"><span class="nv">git</span> <span class="nv">submodule</span> <span class="nv">add</span> <span class="nv">https</span><span class="p">:</span><span class="c1">//github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><p>等待下载完成后，便可以进行配置了。假如你想用其他方式安装，也可以参考<a class="link" href="https://stack.jimmycai.com/guide/getting-started"  target="_blank" rel="noopener"
+</div><p>等待下载完成后，便可以进行<a class="link" href="##%e4%b8%bb%e9%a2%98%e9%85%8d%e7%bd%ae%e5%8e%86%e7%a8%8b" >配置</a>了。假如你想用其他方式安装，也可以参考<a class="link" href="https://stack.jimmycai.com/guide/getting-started"  target="_blank" rel="noopener"
     >这里</a>。<br>
 Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/config/"  target="_blank" rel="noopener"
     >说明文档</a>，我建议是将<code>./themes/hugo-theme-stack/exampleSite/content</code>和<code>./themes/hugo-theme-stack/config.yaml</code>直接夺舍，根据说明与需求修改，会剩下很多时间。</p>
@@ -603,6 +617,13 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <li><code>git push -u origin master //我采用了master分支</code>后是要验证github账号的（也许只有首次有？），假如你没有，那么我建议你读第2点。</li>
 <li>Github是有带GUI的客户端的，git苦手可以考虑用这个。</li>
 </ol>
+<h2 id="主题配置历程">主题配置历程</h2>
+<p>由于主题的配置是个个体差异极大的过程，因此我不会事无巨细地说明每一个过程，而是说明几个小点。</p>
+<h3 id="网站图标更改">网站图标更改</h3>
+<p>其实很简单，但是我被一个issue误导了，哈哈。<br>
+将图片生成的favicon文件夹放在<code>./static</code>文件夹下，然后在<code>cofig.yaml</code>下指定：<code>favicon: /favicon/favicon.ico </code>就行。</p>
+<h3 id="评论系统之接入">评论系统之接入</h3>
+<p>忘了Uttrances怎么配置的了啊嗯，鸽了。</p>
 <h2 id="stack主题自定义">Stack主题自定义</h2>
 <p>首先放一下对比图：<br>
 <img src="/images/4post/lightmode_default.png"
@@ -716,7 +737,95 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 	
 ></p>
-<h3 id="修改网站布局">修改网站布局</h3>
+<p>Tag的修改我也说下，用上面的方法找到代码，发现：<br>
+<img src="/images/4post/tagcolorcode.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="Tag colour"
+	
+	
+></p>
+<blockquote>
+<p>Is this LGBT light?</p>
+</blockquote>
+<p>然后把能找到这些颜色的地方全图图了：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">article-list</span> <span class="nt">article</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span> <span class="p">.</span><span class="nc">article-category</span> <span class="nt">a</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="mh">#1B365D</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">article-category</span> <span class="nt">a</span><span class="o">,</span> <span class="p">.</span><span class="nc">article-tags</span> <span class="nt">a</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#1B365D</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>Note:</strong><br>
+改完之后我发现分类的 Tag 还是存在问题，虽说前几个颜色是对的，但是越往后走居然开始变色了：<br>
+<img src="/images/4post/case.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="变色Tag"
+	
+	
+><br>
+此时即使在custom.scss中指定了颜色也没啥用，看了下这玩意居然在是element.style写死的，多少有点幽默：<br>
+<img src="/images/4post/element_style.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="css"
+	
+	
+><br>
+于是便需要在源代码后面加上<code>!important</code>，Done。<br>
+现代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">article-list</span> <span class="nt">article</span><span class="p">:</span><span class="nd">nth-child</span><span class="o">(</span><span class="nt">n</span><span class="o">)</span> <span class="p">.</span><span class="nc">article-category</span> <span class="nt">a</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background</span><span class="p">:</span> <span class="mh">#1B365D</span><span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">article-category</span> <span class="nt">a</span><span class="o">,</span> <span class="p">.</span><span class="nc">article-tags</span> <span class="nt">a</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">background-color</span><span class="p">:</span> <span class="mh">#1B365D</span><span class="cp">!important</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">color</span><span class="p">:</span> <span class="mh">#fff</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="修改网站布局">修改网站布局</h3>
 <p>原先挤满所有空间的布局我不喜欢，遂改。
 这里使用<a class="link" href="https://xrg.fj.cn/p/hugo-stack%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E5%B0%8F%E8%AE%B0/#%E4%B8%BB%E9%A1%B5%E5%B8%83%E5%B1%80"  target="_blank" rel="noopener"
     >仙贝的代码</a>，一样是在<code>custom.scss</code>中添加：</p>
@@ -760,42 +869,42 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span><span class="lnt">36
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="nc">.container</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">    <span class="na">margin-left</span><span class="o">:</span> <span class="ni">auto</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">    <span class="na">margin-right</span><span class="o">:</span> <span class="ni">auto</span><span class="p">;</span>
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">container</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-left</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-right</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">&amp;</span><span class="nc">.extended</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="cm">/* range: 768-1024 */</span>
-</span></span><span class="line"><span class="cl">        <span class="k">@include</span><span class="nd"> respond</span><span class="p">(</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="na">max-width</span><span class="o">:</span> <span class="mi">1024</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="na">--left-sidebar-max-width</span><span class="o">:</span> <span class="mi">25</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="na">--right-sidebar-max-width</span><span class="o">:</span> <span class="mi">30</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="err">&amp;.extended</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* range: 768-1024 */</span>
+</span></span><span class="line"><span class="cl">        <span class="err">@include</span> <span class="err">respond(md)</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">max-width</span><span class="p">:</span> <span class="mi">1024</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">--left-sidebar-max-width</span><span class="p">:</span> <span class="mi">25</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">--right-sidebar-max-width</span><span class="p">:</span> <span class="mi">30</span><span class="kt">%</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="cm">/* range: 1024-1280 */</span>
-</span></span><span class="line"><span class="cl">        <span class="k">@include</span><span class="nd"> respond</span><span class="p">(</span><span class="n">lg</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="na">max-width</span><span class="o">:</span> <span class="mi">1280</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="na">--left-sidebar-max-width</span><span class="o">:</span> <span class="mi">25</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="na">--right-sidebar-max-width</span><span class="o">:</span> <span class="mi">22</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">/* range: 1024-1280 */</span>
+</span></span><span class="line"><span class="cl">        <span class="p">@</span><span class="k">include</span> <span class="nt">respond</span><span class="o">(</span><span class="nt">lg</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">max-width</span><span class="o">:</span> <span class="nt">1280px</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">--left-sidebar-max-width</span><span class="o">:</span> <span class="nt">25</span><span class="o">%;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">--right-sidebar-max-width</span><span class="o">:</span> <span class="nt">22</span><span class="o">%;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">&amp;</span><span class="nc">.compact</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">@include</span><span class="nd"> respond</span><span class="p">(</span><span class="n">md</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="na">--left-sidebar-max-width</span><span class="o">:</span> <span class="mi">25</span><span class="kt">%</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="na">max-width</span><span class="o">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">@include</span><span class="nd"> respond</span><span class="p">(</span><span class="n">lg</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="na">max-width</span><span class="o">:</span> <span class="mi">1024</span><span class="kt">px</span><span class="p">;</span>
-</span></span><span class="line"><span class="cl">            <span class="na">--left-sidebar-max-width</span><span class="o">:</span> <span class="mi">20</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">&amp;</span><span class="p">.</span><span class="nc">compact</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="err">@include</span> <span class="err">respond(md)</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nv">--left-sidebar-max-width</span><span class="p">:</span> <span class="mi">25</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">max-width</span><span class="p">:</span> <span class="mi">768</span><span class="kt">px</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">        <span class="k">@include</span><span class="nd"> respond</span><span class="p">(</span><span class="n">xl</span><span class="p">)</span> <span class="p">{</span>
-</span></span><span class="line"><span class="cl">            <span class="na">max-width</span><span class="o">:</span> <span class="mi">1280</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">@</span><span class="k">include</span> <span class="nt">respond</span><span class="o">(</span><span class="nt">lg</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">max-width</span><span class="o">:</span> <span class="nt">1024px</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">--left-sidebar-max-width</span><span class="o">:</span> <span class="nt">20</span><span class="o">%;</span>
 </span></span><span class="line"><span class="cl">        <span class="p">}</span>
-</span></span><span class="line"><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">@</span><span class="k">include</span> <span class="nt">respond</span><span class="o">(</span><span class="nt">xl</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">max-width</span><span class="o">:</span> <span class="nt">1280px</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>即可。</p>
@@ -848,7 +957,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="图标添加">图标添加</h3>
+</div><h3 id="图标添加与修改">图标添加与修改</h3>
 <p>Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失的图标要手动添加。<br>
 例如我想添加一个比比汗丽丽的图标，在<a class="link" href="https://tabler-icons.io/"  target="_blank" rel="noopener"
     >Tabler官网</a>搜索发现居然真有：<br>
@@ -862,7 +971,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 	
 ><br>
-将svg文件其下载到主题中的<code>.assets\icons</code>中，再调用即可。<br>
+将svg文件其下载到<code>.\themes\hugo-theme-stack\assets\icons</code>中，再调用即可。<br>
 <img src="/images/4post/implement.png"
 	
 	
@@ -873,13 +982,126 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 	
 ></p>
+<p>另外，我也不是很喜欢自带的深色模式切换开关，以我个人的的观点来看，这玩意太不直观了：<br>
+<img src="/"
+	
+	
+	
+	loading="lazy"
+	
+		alt="原版"
+	
+	
+><br>
+图标的添加方式就不再赘述，我这里选的是&quot;sun-high&quot;和&quot;moon-stars&quot;这两个图标。</p>
+<blockquote>
+<p>观察网页的CSS可以发现：深色模式下图标的切换就是“一个显示，一个隐藏”，在相关文件中指定该用的图标即可。</p>
+</blockquote>
+<p>作者将这个开关做在了侧边栏里，因而直接在有关的<code>.\assets\scss\partials\sidebar.scss</code>和<code>\layouts\partials\sidebar\left.html</code>里指定图标即可:
+``</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/* .\assets\scss\partials\sidebar.scss Line 154*/</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span><span class="nt">data-scheme</span><span class="o">=</span><span class="s2">&#34;dark&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="err">#dark-mode-toggle</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">accent</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">font-weight</span><span class="p">:</span> <span class="mi">700</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="err">.icon-tabler-sun-high</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nc">icon-tabler-moon-stars</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">display</span><span class="p">:</span> <span class="kc">unset</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">#</span><span class="nn">dark-mode-toggle</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-top</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="kc">text</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">flex</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">align-items</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">cursor</span><span class="p">:</span> <span class="kc">pointer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">gap</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">menu</span><span class="o">-</span><span class="kc">icon</span><span class="o">-</span><span class="n">separation</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="err">.icon-tabler-moon-stars</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!---.\layouts\partials\sidebar\left.html Line 91---&gt;</span>
+</span></span><span class="line"><span class="cl">{{ if (default false .Site.Params.colorScheme.toggle) }}
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">li</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;dark-mode-toggle&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    {{ partial &#34;helper/icon&#34; &#34;sun-high&#34; }}
+</span></span><span class="line"><span class="cl">    {{ partial &#34;helper/icon&#34; &#34;moon-stars&#34; }}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>{{ T &#34;darkMode&#34; }}<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>效果如下：<br>
+<img src="/"
+	
+	
+	
+	loading="lazy"
+	
+		alt="效果图"
+	
+	
+><br>
+顺带一提，想改中文翻译直接去<code>\i18n\zh-cn.yaml</code>中修改即可（暗色模式这翻译也太怪了）。</p>
 <h2 id="目前仍未完成的部分">目前仍未完成的部分</h2>
 <p>当然目前这个网站仍存在以下问题以及遗憾：</p>
 <ol>
 <li>过往文章未恢复</li>
-<li>评论系统未接入</li>
+<li><del>评论系统未接入</del></li>
 <li>部分界面还未配置好</li>
-<li>网站图标未设置（其实是还没做）</li>
+<li><del>网站图标未设置（其实是还没做）</del></li>
 <li>没有文章修改时间显示</li>
 <li>洋文站点还没完成</li>
 <li>Category机制还没搞懂</li>
@@ -896,7 +1118,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 ></p>
 <h2 id="预告部分">预告部分</h2>
-<h3 id="主题配置历程">主题配置历程</h3>
+<h3 id="主题配置历程-1">主题配置历程</h3>
 <h3 id="markdown小教程">Markdown小教程</h3>
 <p><strong>つづく</strong></p>
 
