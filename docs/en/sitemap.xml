@@ -2,21 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://oxidane-uni.github.io/en/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://oxidane-uni.github.io/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://oxidane-uni.github.io/en/"
-                />
-  </url><url>
     <loc>https://oxidane-uni.github.io/en/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+    <lastmod>2023-04-21T17:51:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -29,7 +16,7 @@
                 />
   </url><url>
     <loc>https://oxidane-uni.github.io/en/page/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-05-13T00:52:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -41,8 +28,21 @@
                 href="https://oxidane-uni.github.io/en/page/"
                 />
   </url><url>
+    <loc>https://oxidane-uni.github.io/en/</loc>
+    <lastmod>2023-04-21T17:51:57+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://oxidane-uni.github.io/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://oxidane-uni.github.io/en/"
+                />
+  </url><url>
     <loc>https://oxidane-uni.github.io/en/about/</loc>
-    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-05-13T00:52:13+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -67,6 +67,7 @@
                 />
   </url><url>
     <loc>https://oxidane-uni.github.io/en/links/</loc>
+    <lastmod>2023-04-24T01:28:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -79,6 +80,7 @@
                 />
   </url><url>
     <loc>https://oxidane-uni.github.io/en/search/</loc>
+    <lastmod>2023-04-21T17:51:57+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"

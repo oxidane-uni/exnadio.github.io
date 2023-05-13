@@ -6,12 +6,12 @@
 
 <link rel='canonical' href='https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/'>
 
-<link rel="stylesheet" href="/scss/style.min.1263e6f7766f818a44e41c2d4e1440b1638cab4a0521a89f24a24b3962a103b0.css">
+<link rel="stylesheet" href="/scss/style.min.ea3b7f6af4097d0ca096c3d8aff8f167b12b2e5024539aa27b5e08066b168884.css">
 <meta property='og:title' content='使用 Hugo 对博客的重建与 Stack 主题优化记录'>
 <meta property='og:description' content='你不觉得图文无关很酷么？'>
 <meta property='og:url' content='https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/'>
 <meta property='og:site_name' content='Exnadio&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2023-04-22T14:56:05&#43;08:00'/><meta property='article:modified_time' content='2023-04-22T14:56:05&#43;08:00'/><meta property='og:image' content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2023-04-22T14:56:05&#43;08:00'/><meta property='article:modified_time' content='2023-05-14T00:04:39&#43;08:00'/><meta property='og:image' content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
 <meta name="twitter:title" content="使用 Hugo 对博客的重建与 Stack 主题优化记录">
 <meta name="twitter:description" content="你不觉得图文无关很酷么？"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
@@ -344,6 +344,9 @@
         <li><a href="#修改网站布局">修改网站布局</a></li>
         <li><a href="#老头滚动条修改">老头滚动条修改</a></li>
         <li><a href="#图标添加与修改">图标添加与修改</a></li>
+        <li><a href="#添加字数统计">添加字数统计</a></li>
+        <li><a href="#文章修改时间显示">文章修改时间显示</a></li>
+        <li><a href="#友情链接改为双列显示">友情链接改为双列显示</a></li>
       </ol>
     </li>
     <li><a href="#目前仍未完成的部分">目前仍未完成的部分</a></li>
@@ -353,6 +356,7 @@
         <li><a href="#markdown小教程">Markdown小教程</a></li>
       </ol>
     </li>
+    <li><a href="#参考链接">参考链接</a></li>
   </ol>
 </nav>
         </div>
@@ -417,6 +421,18 @@
 </svg>
                 <time class="article-time--published">Apr 22, 2023</time>
             </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-edit" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" />
+  <path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" />
+  <path d="M16 5l3 3" />
+</svg>
+
+
+
+            <time class="article-lastmod">May 14, 2023</time>
+        </div>
         
 
         
@@ -430,10 +446,29 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 9 分钟
+                    阅读时长: 11 分钟
                 </time>
             </div>
         
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-description" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+  <path d="M9 17h6" />
+  <path d="M9 13h6" />
+</svg>
+
+
+
+                <time class="article-words">
+                    5231 字
+                </time>
+            </div>
+        
+    
     </footer>
     
 
@@ -462,7 +497,7 @@
     >releases</a>和 Git 的<a class="link" href="https://git-scm.com/"  target="_blank" rel="noopener"
     >官网</a>都能很方便地下载。我选择的是 hugo_extended_0.111.2_windows-amd64.zip
 版本，以便后续折腾。下载完成后将压缩包里的东西解压至你喜欢的目录，再将该目录的路径添加到环境变量中以便后续调用。至于 Git 的安装，我就不再赘述了。<br>
-<img src="/images/4post/path.png"
+<img src="/images/4post/23422/path.png"
 	
 	
 	
@@ -543,7 +578,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>即可建立一个本地服务器。<br>
-<img src="/images/4post/hugoserver.png"
+<img src="/images/4post/23422/hugoserver.png"
 	
 	
 	
@@ -560,7 +595,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <code>hugo new post/rebuild_blog.md</code>
 打开后你会发现生成的Markdown文档带有一段FrontMatter部分，具体的意思可以在<a class="link" href="https://stack.jimmycai.com/writing/frontmatter"  target="_blank" rel="noopener"
     >这里</a>找到。大体上可以认为是文档的一些属性。<br>
-<img src="/images/4post/frontmatter.png"
+<img src="/images/4post/23422/frontmatter.png"
 	
 	
 	
@@ -626,30 +661,27 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <p>忘了Uttrances怎么配置的了啊嗯，鸽了。</p>
 <h2 id="stack主题自定义">Stack主题自定义</h2>
 <p>首先放一下对比图：<br>
-<img src="/images/4post/lightmode_default.png"
+<img src="/images/4post/23422/lightmode_default.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="lightmode_default"
 	
 	
 > <br>
-<img src="/images/4post/lightmode_modified.png"
+<img src="/images/4post/23422/lightmode_modified.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="lightmode_modified"
 	
 	
 ></p>
 <h3 id="改善浅色模式可读性">改善浅色模式可读性</h3>
 <p>配置完 Stack 后，我并不是很满意，假如说满分100的话我只能打个70分左右。最大的不满在于其浅色模式下可读性实在是过于糟糕,你可以在 <a class="link" href="https://demo.stack.jimmycai.com/"  target="_blank" rel="noopener"
     >Demo网站</a> 上感受一下，我不清楚为什么作者采用了<code>#bababa</code>这个颜色，导致其与背景的对比度来到了可怜的1.94，简直就是一场彻头彻尾的灾难。<br>
-不过好在 Stack 主题预留了自定义的空间，详见<a class="link" href="" >官网的说明</a>。这里具体介绍下自定义的方法：<br>
+不过好在 Stack 主题预留了自定义的空间，详见<a class="link" href="https://stack.jimmycai.com/guide/modify-theme"  target="_blank" rel="noopener"
+    >官网的说明</a>。这里具体介绍下自定义的方法：<br>
 在Stack以及很多主题中，主题文件夹下的<code>assets/scss</code>下都提供了一个供用户自定义的<code>custom.scss</code>文件。</p>
 <blockquote>
 <p>原理便是在最后引入这个文件，使其位于最终css文件的末尾，从而覆盖原先的属性，达到“自定义”的效果。</p>
@@ -657,35 +689,29 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <p>因此，想要自定义就很简单了：找到你希望修改的元素和它对应的选择器，重新定义这个选择器即可。<br>
 万幸，目前的浏览器为我们提供了好用的开发者工具。以我现在使用的Edge为例，按下<code>F12</code>弹出开发者工具，使用左上角的小箭头使你的鼠标变成一个查看器(你也可以使用<code>SHIFT</code>+<code>CTRL</code>+<code>C</code>的组合键)，只要将光标置于你想修改的元素上，就能找到该元素的源代码。<br>
 例如我现在想改浅色模式下的文本颜色，只需选择一段文本,就能在右下角找到它对应的css:<br>
-<img src="/images/4post/css_selected.png"
+<img src="/images/4post/23422/css_selected.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="选择元素"
 	
 	
 ><br>
-<img src="/images/4post/css_txt.png"
+<img src="/images/4post/23422/css_txt.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="文本对应css"
 	
 	
 ><br>
 可以看到文本被指定为<code>---body-text-color</code>。<br>
 再顺藤摸瓜找到对应的颜色控制：<br>
-<img src="/images/4post/css_color.png"
+<img src="/images/4post/23422/css_color.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="颜色css"
 	
 	
 ><br>
@@ -727,24 +753,20 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时就能达到这种效果了：<br>
-<img src="/images/4post/lightmode_modified.png"
+<img src="/images/4post/23422/lightmode_modified.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="lightmode_modified"
 	
 	
 ></p>
 <p>Tag的修改我也说下，用上面的方法找到代码，发现：<br>
-<img src="/images/4post/tagcolorcode.png"
+<img src="/images/4post/23422/tagcolorcode.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="Tag colour"
 	
 	
 ></p>
@@ -778,24 +800,20 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </div>
 </div><p><strong>Note:</strong><br>
 改完之后我发现分类的 Tag 还是存在问题，虽说前几个颜色是对的，但是越往后走居然开始变色了：<br>
-<img src="/images/4post/case.png"
+<img src="/images/4post/23422/case.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="变色Tag"
 	
 	
 ><br>
 此时即使在custom.scss中指定了颜色也没啥用，看了下这玩意居然在是element.style写死的，多少有点幽默：<br>
-<img src="/images/4post/element_style.png"
+<img src="/images/4post/23422/element_style.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="css"
 	
 	
 ><br>
@@ -961,35 +979,29 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <p>Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失的图标要手动添加。<br>
 例如我想添加一个比比汗丽丽的图标，在<a class="link" href="https://tabler-icons.io/"  target="_blank" rel="noopener"
     >Tabler官网</a>搜索发现居然真有：<br>
-<img src="/images/4post/searchresult.png"
+<img src="/images/4post/23422/searchresult.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="搜索结果"
 	
 	
 ><br>
 将svg文件其下载到<code>.\themes\hugo-theme-stack\assets\icons</code>中，再调用即可。<br>
-<img src="/images/4post/implement.png"
+<img src="/images/4post/23422/implement.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="调用"
 	
 	
 ></p>
 <p>另外，我也不是很喜欢自带的深色模式切换开关，以我个人的的观点来看，这玩意太不直观了：<br>
-<img src="/"
+<img src="/images/4post/23422/toggle.png"
 	
 	
 	
 	loading="lazy"
-	
-		alt="原版"
 	
 	
 ><br>
@@ -1084,30 +1096,212 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：<br>
-<img src="/"
+<img src="/images/4post/23422/sun.png"
 	
 	
 	
 	loading="lazy"
 	
-		alt="效果图"
-	
 	
 ><br>
 顺带一提，想改中文翻译直接去<code>\i18n\zh-cn.yaml</code>中修改即可（暗色模式这翻译也太怪了）。</p>
-<h2 id="目前仍未完成的部分">目前仍未完成的部分</h2>
+<h3 id="添加字数统计">添加字数统计</h3>
+<p>Stack本身是不带字数统计的，但是Hugo本身是支持进行字数统计的。所以我决定，写一段字数统计的代码。
+Stack的文章页面是由三个html控制的：
+.
+├── details.html   <br>
+├── content.html  <br>
+└── footer.html
+所以在<code>details.html</code>中加入相应的字数统计代码就行了。
+在互联网上找了一圈后，我发现之前就有人写过<a class="link" href="https://mantyke.icu/posts/2021/f9f0ec87/"  target="_blank" rel="noopener"
+    >相关代码</a>。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ if .Site.Params.article.readingTime }} 
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    {{ partial &#34;helper/icon&#34; &#34;brush&#34; }} 
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">time</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;article-words&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{ .WordCount }}字
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>然而这段代码没有多语言支持，所以我决定让事情变得更复杂：<strong>全面照抄</strong>Stack实现阅读时长的方式。<br>
+首先在<code>congfig.yaml</code>中的<code>.params.article</code>中添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">wordCount</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>然后参考前面的和readTime的代码，在<code>detail.html</code>中加上下面的代码：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{ if .Site.Params.article.readingTime }}
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    {{ partial &#34;helper/icon&#34; &#34;file-description&#34; }}
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">time</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;article-words&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{ T &#34;article.wordCount&#34; .WordCount }}
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> {{ end }}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>之后只要添加多语言支持，也就是在<code>i18n</code>文件夹中修改对应语言的.yaml文件就好了。以英文为例，在<code>.\i18n\en.yaml</code>中加上：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">wordCount</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">other</span><span class="p">:</span><span class="w"> </span><span class="s2">&#34;{{.Count}} words&#34;</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>便完事大成了。反正一切主打的就是一个<strong>readTime在哪我在哪</strong></p>
+<blockquote>
+<p>顺带改了下图标，参考<a class="link" href="###%e5%9b%be%e6%a0%87%e6%b7%bb%e5%8a%a0%e4%b8%8e%e4%bf%ae%e6%94%b9" >这里</a></p>
+</blockquote>
+<h3 id="文章修改时间显示">文章修改时间显示</h3>
+<p>修改时间就没有字数统计这么麻烦了。Stack本身自带修改时间显示，不过这玩意放在了最底下，不太直观，我就把它提上来了。<br>
+源代码看位置就在<code>.\layouts\partials\article\components\footer.html</code>里，果不其然：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{- if ne .Lastmod .Date -}}
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;article-lastmod&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">   {{ partial &#34;helper/icon&#34; &#34;clock&#34; }}
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">      {{ T &#34;article.lastUpdatedOn&#34; }} {{ .Lastmod.Format ( or .Site.Params.dateFormat.lastUpdated &#34;Jan 02, 2006 15:04 MST&#34; ) }}
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"> {{- end -}}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>前面也说了，日期、阅读时间之类被放在了<code>.\layouts\partials\article\components\footer.html</code>里，因此在参考日期的代码和源代码基础上做点修改，添加进去就行：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">{{- if ne .Lastmod .Date -}}
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    {{ partial &#34;helper/icon&#34; &#34;edit&#34; }}
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;</span><span class="nt">time</span> <span class="na">class</span><span class="o">=</span><span class="s">&#34;article-lastmod&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">        {{- .Lastmod.Format (or .Site.Params.dateFormat.published &#34;Jan 02, 2006&#34;) -}}
+</span></span><span class="line"><span class="cl">      <span class="p">&lt;/</span><span class="nt">time</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">{{ end }}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>顺带，为了自动更改修改时间，在<code>config.yaml</code>中添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">frontmatter</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">lastmod</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&#34;:fileModTime&#34;</span><span class="p">,</span><span class="w"> </span><span class="s2">&#34;lastmod&#34;</span><span class="p">]</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="友情链接改为双列显示">友情链接改为双列显示</h3>
+<p>这里我用的是<a class="link" href="https://tech.randomwaves.space/posts/21-12-08-make-hugo-stack-theme-links-display-in-two-columns/"  target="_blank" rel="noopener"
+    >大佬的代码</a>，修改过程和之前一样，在<code>custom.scss</code>添上以下css即可：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-scss" data-lang="scss"><span class="line"><span class="cl"><span class="k">@media</span> <span class="p">(</span><span class="na">min-width</span><span class="o">:</span> <span class="mi">1024</span><span class="kt">px</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nc">.article-list--compact.links</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">      <span class="na">display</span><span class="o">:</span> <span class="ni">grid</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">grid-template-columns</span><span class="o">:</span> <span class="mi">1</span><span class="kt">fr</span> <span class="mi">1</span><span class="kt">fr</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">background</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      <span class="na">box-shadow</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">      
+</span></span><span class="line"><span class="cl">      <span class="nt">article</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">          <span class="na">background</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card-background</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">          <span class="na">border</span><span class="o">:</span> <span class="ni">none</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">box-shadow</span><span class="o">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">shadow-l2</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">          <span class="na">margin-bottom</span><span class="o">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="na">border-radius</span><span class="o">:</span> <span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="k">&amp;</span><span class="nd">:nth-child</span><span class="o">(</span><span class="nt">odd</span><span class="o">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">              <span class="na">margin-right</span><span class="o">:</span> <span class="mi">8</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">          <span class="p">}</span>
+</span></span><span class="line"><span class="cl">      <span class="p">}</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="目前仍未完成的部分">目前仍未完成的部分</h2>
 <p>当然目前这个网站仍存在以下问题以及遗憾：</p>
 <ol>
 <li>过往文章未恢复</li>
 <li><del>评论系统未接入</del></li>
 <li>部分界面还未配置好</li>
 <li><del>网站图标未设置（其实是还没做）</del></li>
-<li>没有文章修改时间显示</li>
+<li><del>没有文章修改时间显示</del></li>
 <li>洋文站点还没完成</li>
-<li>Category机制还没搞懂</li>
+<li><del>Category机制还没搞懂</del> 他妈的，实在搞不懂。</li>
 </ol>
 <p>以上，<strong>下次</strong>大概的确会修复！</p>
-<p><img src="/images/4post/nextepisode.png"
+<p><img src="/images/4post/23422/nextepisode.png"
 	
 	
 	
@@ -1121,6 +1315,17 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <h3 id="主题配置历程-1">主题配置历程</h3>
 <h3 id="markdown小教程">Markdown小教程</h3>
 <p><strong>つづく</strong></p>
+<h2 id="参考链接">参考链接</h2>
+<p><a class="link" href="https://zhajiman.github.io/post/rebuild_blog/"  target="_blank" rel="noopener"
+    >用 Hugo 重新搭建博客</a><br>
+<a class="link" href="https://xrg.fj.cn/p/hugo-stack%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%96%B0%E5%B0%8F%E8%AE%B0"  target="_blank" rel="noopener"
+    >Hugo Stack主题更新小记</a><br>
+<a class="link" href="https://tech.randomwaves.space/posts/21-12-08-make-hugo-stack-theme-links-display-in-two-columns/"  target="_blank" rel="noopener"
+    >将Hugo Stack主题友情链接改为双列显示</a><br>
+<a class="link" href="https://mantyke.icu/posts/2021/f9f0ec87/"  target="_blank" rel="noopener"
+    >Hugo | 看中 Stack 主题的归档功能，搬家并做修改</a><br>
+<a class="link" href="https://gohugo.io/variables/page/"  target="_blank" rel="noopener"
+    >Page Variables</a></p>
 
 </section>
 
@@ -1146,7 +1351,20 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 
         <span>Licensed under CC BY-NC-SA 4.0</span>
     </section>
-    </footer>
+    <section class="article-lastmod">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-edit" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" />
+  <path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" />
+  <path d="M16 5l3 3" />
+</svg>
+
+
+
+        <span>
+            最后更新于 May 14, 2023 00:04 CST
+        </span>
+    </section></footer>
 
 
     
