@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://oxidane-uni.github.io/p/%E6%B4%8B%E5%9E%83%E5%9C%BE%E4%B9%8B%E7%BE%8Ehardcider-labs-slicecharge3-pro%E8%AF%84%E6%B5%8B/'>
 
-<link rel="stylesheet" href="/scss/style.min.ea3b7f6af4097d0ca096c3d8aff8f167b12b2e5024539aa27b5e08066b168884.css">
+<link rel="stylesheet" href="/scss/style.min.e88bd79c109b8f7b04ccd917c4de7cc6ec7ad9ca595b76b1d6567bdd9bacf616.css">
 <meta property='og:title' content='洋垃圾之美：Hardcider Labs Slicecharge3 Pro评测'>
 <meta property='og:description' content='头图来自充电头网,拍得比我好多了，偷！ 本次评测的为一家“小而美”的小厂库存无线充电板 简称，洋垃圾。感觉设计挺有果味，就买了。 关于“Hardc'>
 <meta property='og:url' content='https://oxidane-uni.github.io/p/%E6%B4%8B%E5%9E%83%E5%9C%BE%E4%B9%8B%E7%BE%8Ehardcider-labs-slicecharge3-pro%E8%AF%84%E6%B5%8B/'>
@@ -941,51 +941,55 @@
      
     
         
-    <script src="https://utteranc.es/client.js" 
-        repo="oxidane-uni/forUtterances"
-        issue-term="pathname"
-        
+    <script src="https://giscus.app/client.js"
+        data-repo="oxidane-uni/forBlogdiscussions"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkzODk2MzU4OTc="
+        data-category="Announcements"
+        data-category-id="DIC_kwDOFzlfOc4CbDbw"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        data-loading="lazy"
         crossorigin="anonymous"
-        async
-        >
+        async>
 </script>
-
-<style>
-    .utterances {
-        max-width: unset;
-    }
-</style>
-
 <script>
-    let utterancesLoaded = false;
-
-    function setUtterancesTheme(theme) {
-        let utterances = document.querySelector('.utterances iframe');
-        if (utterances) {
-            utterances.contentWindow.postMessage(
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
                 {
-                    type: 'set-theme',
-                    theme: `github-${theme}`
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
                 },
-                'https://utteranc.es'
+                "https://giscus.app"
             );
         }
     }
 
-    addEventListener('message', event => {
-        if (event.origin !== 'https://utteranc.es') return;
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
 
-        
-        utterancesLoaded = true;
-        setUtterancesTheme(document.documentElement.dataset.scheme)
-    });
-
-    window.addEventListener('onColorSchemeChange', (e) => {
-        if (!utterancesLoaded) return;
-        setUtterancesTheme(e.detail)
-    })
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('light');
+            } else {
+                setGiscusTheme('noborder_gray');
+            }
+        }
+    })();
 </script>
-
 
     
 

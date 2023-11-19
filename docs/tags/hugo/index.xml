@@ -190,7 +190,8 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;p&gt;其实很简单，但是我被一个issue误导了，哈哈。&lt;br&gt;
 将图片生成的favicon文件夹放在&lt;code&gt;./static&lt;/code&gt;文件夹下，然后在&lt;code&gt;cofig.yaml&lt;/code&gt;下指定：&lt;code&gt;favicon: /favicon/favicon.ico &lt;/code&gt;就行。&lt;/p&gt;
 &lt;h3 id=&#34;评论系统之接入&#34;&gt;评论系统之接入&lt;/h3&gt;
-&lt;p&gt;忘了Uttrances怎么配置的了啊嗯，鸽了。&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;忘了Uttrances怎么配置的了啊嗯，鸽了。&lt;/del&gt;&lt;/p&gt;
+&lt;p&gt;已将评论系统改为giscus，配置过程见&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;这里&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;stack主题自定义&#34;&gt;Stack主题自定义&lt;/h2&gt;
 &lt;p&gt;首先放一下对比图：&lt;br&gt;
 &lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/lightmode_default.png&#34;
@@ -247,7 +248,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 	
 &gt;&lt;br&gt;
-把要修改的部分直接复制出来放进&lt;code&gt;custom.scss&lt;/code&gt;文件中，修改下即可。比如我使用的就是一套 volvo 色：&lt;/p&gt;
+把要修改的部分直接复制出来放进&lt;code&gt;custom.scss&lt;/code&gt;文件中，修改下即可。比如我使用的这套：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
@@ -639,12 +640,22 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 顺带一提，想改中文翻译直接去&lt;code&gt;\i18n\zh-cn.yaml&lt;/code&gt;中修改即可（暗色模式这翻译也太怪了）。&lt;/p&gt;
 &lt;h3 id=&#34;添加字数统计&#34;&gt;添加字数统计&lt;/h3&gt;
 &lt;p&gt;Stack本身是不带字数统计的，但是Hugo本身是支持进行字数统计的。所以我决定，写一段字数统计的代码。
-Stack的文章页面是由三个html控制的：
-.
-├── details.html   &lt;br&gt;
-├── content.html  &lt;br&gt;
-└── footer.html
-所以在&lt;code&gt;details.html&lt;/code&gt;中加入相应的字数统计代码就行了。
+Stack的文章页面是由三个html控制的：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;.  
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── details.html        
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;├── content.html     
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;└── footer.html   
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;所以在&lt;code&gt;details.html&lt;/code&gt;中加入相应的字数统计代码就行了。
 在互联网上找了一圈后，我发现之前就有人写过&lt;a class=&#34;link&#34; href=&#34;https://mantyke.icu/posts/2021/f9f0ec87/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;相关代码&lt;/a&gt;。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
@@ -824,13 +835,13 @@ Stack的文章页面是由三个html控制的：
 &lt;/div&gt;&lt;h2 id=&#34;目前仍未完成的部分&#34;&gt;目前仍未完成的部分&lt;/h2&gt;
 &lt;p&gt;当然目前这个网站仍存在以下问题以及遗憾：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;过往文章未恢复&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;过往文章未恢复&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;&lt;del&gt;评论系统未接入&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;部分界面还未配置好&lt;/li&gt;
 &lt;li&gt;&lt;del&gt;网站图标未设置（其实是还没做）&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;&lt;del&gt;没有文章修改时间显示&lt;/del&gt;&lt;/li&gt;
 &lt;li&gt;洋文站点还没完成&lt;/li&gt;
-&lt;li&gt;&lt;del&gt;Category机制还没搞懂&lt;/del&gt; 他妈的，实在搞不懂。&lt;/li&gt;
+&lt;li&gt;&lt;del&gt;Category机制还没搞懂&lt;/del&gt; &lt;del&gt;他妈的，实在搞不懂。&lt;/del&gt; Fuck,that&amp;rsquo;s a feature.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;以上，&lt;strong&gt;下次&lt;/strong&gt;大概的确会修复！&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/nextepisode.png&#34;
@@ -838,8 +849,6 @@ Stack的文章页面是由三个html控制的：
 	
 	
 	loading=&#34;lazy&#34;
-	
-		alt=&#34;预告&#34;
 	
 	
 &gt;&lt;/p&gt;

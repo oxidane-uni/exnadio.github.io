@@ -125,8 +125,9 @@ hugo
 将图片生成的favicon文件夹放在`./static`文件夹下，然后在`cofig.yaml`下指定：`favicon: /favicon/favicon.ico `就行。
 
 ### 评论系统之接入 
-忘了Uttrances怎么配置的了啊嗯，鸽了。
+~~忘了Uttrances怎么配置的了啊嗯，鸽了。~~
 
+已将评论系统改为giscus，配置过程见[这里]()
 
 ## Stack主题自定义  
 首先放一下对比图：  
@@ -147,7 +148,7 @@ hugo
 可以看到文本被指定为`---body-text-color`。  
 再顺藤摸瓜找到对应的颜色控制：  
 ![](./images/4post/23422/css_color.png)  
-把要修改的部分直接复制出来放进`custom.scss`文件中，修改下即可。比如我使用的就是一套 volvo 色：
+把要修改的部分直接复制出来放进`custom.scss`文件中，修改下即可。比如我使用的这套：
 ```scss
 :root {
   --body-background: #EBEBEB;
@@ -335,11 +336,13 @@ Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失
 
 ### 添加字数统计  
 Stack本身是不带字数统计的，但是Hugo本身是支持进行字数统计的。所以我决定，写一段字数统计的代码。
-Stack的文章页面是由三个html控制的：
-.
-├── details.html      
+Stack的文章页面是由三个html控制的：  
+```
+.  
+├── details.html        
 ├── content.html     
-└── footer.html 
+└── footer.html   
+```
 所以在`details.html`中加入相应的字数统计代码就行了。
 在互联网上找了一圈后，我发现之前就有人写过[相关代码](https://mantyke.icu/posts/2021/f9f0ec87/)。  
 ```html
@@ -432,17 +435,17 @@ frontmatter:
 
 ## 目前仍未完成的部分  
 当然目前这个网站仍存在以下问题以及遗憾：  
-1. 过往文章未恢复  
+1. ~~过往文章未恢复~~  
 2. ~~评论系统未接入~~  
 3. 部分界面还未配置好 
 4. ~~网站图标未设置（其实是还没做）~~  
 5. ~~没有文章修改时间显示~~
 6. 洋文站点还没完成
-7. ~~Category机制还没搞懂~~ 他妈的，实在搞不懂。
+7. ~~Category机制还没搞懂~~ ~~他妈的，实在搞不懂。~~ Fuck,that's a feature. 
 
 以上，**下次**大概的确会修复！  
 
-![预告](./images/4post/23422/nextepisode.png)
+![](./images/4post/23422/nextepisode.png)
 ## 预告部分
 ### 主题配置历程  
 ### Markdown小教程

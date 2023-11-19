@@ -6,7 +6,15 @@
         <description>Recent content in Tags on Exnadio&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 02 May 2023 22:10:11 +0800</lastBuildDate><atom:link href="https://oxidane-uni.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 18 Nov 2023 17:20:26 +0800</lastBuildDate><atom:link href="https://oxidane-uni.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>giscus</title>
+        <link>https://oxidane-uni.github.io/tags/giscus/</link>
+        <pubDate>Sat, 18 Nov 2023 17:20:26 +0800</pubDate>
+        
+        <guid>https://oxidane-uni.github.io/tags/giscus/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Tech</title>
         <link>https://oxidane-uni.github.io/tags/tech/</link>
         <pubDate>Tue, 02 May 2023 22:10:11 +0800</pubDate>
