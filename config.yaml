@@ -45,7 +45,7 @@ params:
 
     footer:
         since: 2020
-        customText: 与博客和解。
+        customText: 与博客和解 & In memory of Coremint。
 
     dateFormat:
         published: Jan 02, 2006
@@ -135,8 +135,6 @@ params:
             darkTheme: "noborder_gray"
             reactionsEnabled: 1
             emitMetadata: 0
-            loading: "lazy"
-            input-position: "top"
 
 
         gitalk:
@@ -190,7 +188,7 @@ params:
         cover:
             enabled: true
         content:
-            enabled: true
+            enabled: false
 
 ### Custom menu
 ### See https://docs.stack.jimmycai.com/configuration/custom-menu.html

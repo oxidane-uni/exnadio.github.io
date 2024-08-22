@@ -7,23 +7,63 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <lastBuildDate>Mon, 16 Oct 2023 22:47:35 +0800</lastBuildDate><atom:link href="https://oxidane-uni.github.io/tags/minecraft/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>不完全Minecraft局域网服务器搭建指南</title>
-        <link>https://oxidane-uni.github.io/p/%E4%B8%8D%E5%AE%8C%E5%85%A8minecraft%E5%B1%80%E5%9F%9F%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</link>
+        <title>不完全 Minecraft 局域网服务器搭建指南</title>
+        <link>https://oxidane-uni.github.io/p/%E4%B8%8D%E5%AE%8C%E5%85%A8-minecraft-%E5%B1%80%E5%9F%9F%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</link>
         <pubDate>Mon, 16 Oct 2023 22:47:35 +0800</pubDate>
         
-        <guid>https://oxidane-uni.github.io/p/%E4%B8%8D%E5%AE%8C%E5%85%A8minecraft%E5%B1%80%E5%9F%9F%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</guid>
-        <description>&lt;img src="https://oxidane-uni.github.io/images/4featureimg/" alt="Featured image of post 不完全Minecraft局域网服务器搭建指南" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
-&lt;p&gt;起因是突然想和室友玩Minecraft，虽然Minecraft自带的局域网联机效果实在太烂了，遂自行搭建服务器。而且由于本身就处于同一局域网下，所以就有了这篇名为指南的服务器搭建记录。&lt;/p&gt;
-&lt;p&gt;首先依旧是叠甲：我既不懂Java也不懂Minecraft，本篇文章大幅度参考&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;Minecraft Wiki&lt;/a&gt;,如有错误也请麻烦指出，我什么都会做的。&lt;/p&gt;
+        <guid>https://oxidane-uni.github.io/p/%E4%B8%8D%E5%AE%8C%E5%85%A8-minecraft-%E5%B1%80%E5%9F%9F%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA%E6%8C%87%E5%8D%97/</guid>
+        <description>&lt;img src="https://oxidane-uni.github.io/images/4featureimg/" alt="Featured image of post 不完全 Minecraft 局域网服务器搭建指南" /&gt;&lt;h2 id=&#34;前言&#34;&gt;前言&lt;/h2&gt;
+&lt;p&gt;起因是突然想和室友玩 Minecraft，然而 Minecraft 自带的局域网联机效果实在太烂了，而且由于本身处于同一局域网下，所以就进行一个服务器的搭。&lt;/p&gt;
+&lt;p&gt;首先：我既不懂 Java 也不懂 Minecraft ，本篇文章参考自&lt;a class=&#34;link&#34; href=&#34;https://zh.minecraft.wiki/w/%E6%95%99%E7%A8%8B/%E6%9E%B6%E8%AE%BE%E6%9C%8D%E5%8A%A1%E5%99%A8&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Minecraft Wiki&lt;/a&gt;，如有错误也请麻烦指出，我什么都会做的。&lt;/p&gt;
+&lt;p&gt;本指南仅适用于 Windows 下的 Java 版本。&lt;/p&gt;
 &lt;h2 id=&#34;准备&#34;&gt;准备&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;首先，准备一台高于以下推荐配置的PC/服务器：&lt;/li&gt;
 &lt;/ol&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;需求&lt;/th&gt;
+&lt;th&gt;玩家&lt;/th&gt;
+&lt;th&gt;CPU&lt;/th&gt;
+&lt;th&gt;RAM&lt;/th&gt;
+&lt;th&gt;ROM&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;最低&lt;/td&gt;
+&lt;td&gt;2-4&lt;/td&gt;
+&lt;td&gt;Intel Core 2 Duo/AMD Athlon 64 x2&lt;/td&gt;
+&lt;td&gt;2GB&lt;/td&gt;
+&lt;td&gt;&amp;gt; 150 MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;推荐&lt;/td&gt;
+&lt;td&gt;2-4&lt;/td&gt;
+&lt;td&gt;Intel Core 2 Duo/AMD Athlon 64 x2&lt;/td&gt;
+&lt;td&gt;3GB&lt;/td&gt;
+&lt;td&gt;&amp;gt; 300 MB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 &lt;blockquote&gt;
+&lt;p&gt;需要注意的是 Wiki 上的这个配置推荐似乎是上古时代的，现代的 PC 应该是随便跑了&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;至于系统似乎没什么必要要求，常见的Windows或是Linux都没啥问题，我这里使用的是Windows 11.&lt;/p&gt;
+&lt;p&gt;至于系统似乎没什么要求，常见的Windows或是Linux都没啥问题，我这里使用的是Windows 11.&lt;/p&gt;
 &lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;下载Java&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;我首先推荐在 shell 中输入 &lt;code&gt;java -version&lt;/code&gt; 避免重复安装。&lt;/p&gt;
+&lt;p&gt;倘若先前没有安装过 Java，那么可以去&lt;a class=&#34;link&#34; href=&#34;https://www.java.com/zh-CN/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Java 官网&lt;/a&gt;下载&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;推荐安装的是 JDK，但是装 JRE 或者 OpenJDK 之类的都是可以的，详见&lt;a class=&#34;link&#34; href=&#34;https://zh.minecraft.wiki/w/Tutorial:%E6%9E%B6%E8%AE%BE%E6%9C%8D%E5%8A%A1%E5%99%A8#Java&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;下载服务器核心&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         </item>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>技术记录 on Exnadio&#39;s Blog</title>
+        <link>https://oxidane-uni.github.io/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/</link>
+        <description>Recent content in 技术记录 on Exnadio&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language><atom:link href="https://oxidane-uni.github.io/categories/%E6%8A%80%E6%9C%AF%E8%AE%B0%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    </channel>
+</rss>

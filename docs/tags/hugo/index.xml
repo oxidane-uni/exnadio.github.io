@@ -29,7 +29,7 @@
     &gt;releases&lt;/a&gt;和 Git 的&lt;a class=&#34;link&#34; href=&#34;https://git-scm.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;官网&lt;/a&gt;都能很方便地下载。我选择的是 hugo_extended_0.111.2_windows-amd64.zip
 版本，以便后续折腾。下载完成后将压缩包里的东西解压至你喜欢的目录，再将该目录的路径添加到环境变量中以便后续调用。至于 Git 的安装，我就不再赘述了。&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/path.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/path.png&#34;
 	
 	
 	
@@ -110,7 +110,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;即可建立一个本地服务器。&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/hugoserver.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/hugoserver.png&#34;
 	
 	
 	
@@ -127,7 +127,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;code&gt;hugo new post/rebuild_blog.md&lt;/code&gt;
 打开后你会发现生成的Markdown文档带有一段FrontMatter部分，具体的意思可以在&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/writing/frontmatter&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;这里&lt;/a&gt;找到。大体上可以认为是文档的一些属性。&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/frontmatter.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/frontmatter.png&#34;
 	
 	
 	
@@ -194,7 +194,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;p&gt;已将评论系统改为giscus，配置过程见&lt;a class=&#34;link&#34; href=&#34;&#34; &gt;这里&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;stack主题自定义&#34;&gt;Stack主题自定义&lt;/h2&gt;
 &lt;p&gt;首先放一下对比图：&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/lightmode_default.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/lightmode_default.png&#34;
 	
 	
 	
@@ -202,7 +202,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 	
 &gt; &lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/lightmode_modified.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/lightmode_modified.png&#34;
 	
 	
 	
@@ -222,7 +222,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;p&gt;因此，想要自定义就很简单了：找到你希望修改的元素和它对应的选择器，重新定义这个选择器即可。&lt;br&gt;
 万幸，目前的浏览器为我们提供了好用的开发者工具。以我现在使用的Edge为例，按下&lt;code&gt;F12&lt;/code&gt;弹出开发者工具，使用左上角的小箭头使你的鼠标变成一个查看器(你也可以使用&lt;code&gt;SHIFT&lt;/code&gt;+&lt;code&gt;CTRL&lt;/code&gt;+&lt;code&gt;C&lt;/code&gt;的组合键)，只要将光标置于你想修改的元素上，就能找到该元素的源代码。&lt;br&gt;
 例如我现在想改浅色模式下的文本颜色，只需选择一段文本,就能在右下角找到它对应的css:&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/css_selected.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/css_selected.png&#34;
 	
 	
 	
@@ -230,7 +230,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 	
 &gt;&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/css_txt.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/css_txt.png&#34;
 	
 	
 	
@@ -240,7 +240,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &gt;&lt;br&gt;
 可以看到文本被指定为&lt;code&gt;---body-text-color&lt;/code&gt;。&lt;br&gt;
 再顺藤摸瓜找到对应的颜色控制：&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/css_color.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/css_color.png&#34;
 	
 	
 	
@@ -286,7 +286,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;此时就能达到这种效果了：&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/lightmode_modified.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/lightmode_modified.png&#34;
 	
 	
 	
@@ -295,7 +295,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;Tag的修改我也说下，用上面的方法找到代码，发现：&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/tagcolorcode.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/tagcolorcode.png&#34;
 	
 	
 	
@@ -333,7 +333,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;
 改完之后我发现分类的 Tag 还是存在问题，虽说前几个颜色是对的，但是越往后走居然开始变色了：&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/case.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/case.png&#34;
 	
 	
 	
@@ -342,7 +342,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 &gt;&lt;br&gt;
 此时即使在custom.scss中指定了颜色也没啥用，看了下这玩意居然在是element.style写死的，多少有点幽默：&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/element_style.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/element_style.png&#34;
 	
 	
 	
@@ -512,7 +512,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;p&gt;Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失的图标要手动添加。&lt;br&gt;
 例如我想添加一个比比汗丽丽的图标，在&lt;a class=&#34;link&#34; href=&#34;https://tabler-icons.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Tabler官网&lt;/a&gt;搜索发现居然真有：&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/searchresult.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/searchresult.png&#34;
 	
 	
 	
@@ -521,7 +521,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 &gt;&lt;br&gt;
 将svg文件其下载到&lt;code&gt;.\themes\hugo-theme-stack\assets\icons&lt;/code&gt;中，再调用即可。&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/implement.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/implement.png&#34;
 	
 	
 	
@@ -530,7 +530,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;另外，我也不是很喜欢自带的深色模式切换开关，以我个人的的观点来看，这玩意太不直观了：&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/toggle.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/toggle.png&#34;
 	
 	
 	
@@ -629,7 +629,7 @@ Stack本身有全英文的&lt;a class=&#34;link&#34; href=&#34;https://stack.jim
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;效果如下：&lt;br&gt;
-&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/sun.png&#34;
+&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/sun.png&#34;
 	
 	
 	
@@ -844,7 +844,7 @@ Stack的文章页面是由三个html控制的：&lt;/p&gt;
 &lt;li&gt;&lt;del&gt;Category机制还没搞懂&lt;/del&gt; &lt;del&gt;他妈的，实在搞不懂。&lt;/del&gt; Fuck,that&amp;rsquo;s a feature.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;以上，&lt;strong&gt;下次&lt;/strong&gt;大概的确会修复！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/23422/nextepisode.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://oxidane-uni.github.io/images/4post/230422/nextepisode.png&#34;
 	
 	
 	

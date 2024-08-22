@@ -6,7 +6,7 @@ image:
 comments: true
 math: true
 categories: 
-  - 你好我的朋友
+  - 其他
 tags:
   - 
 draft: false

@@ -11,7 +11,7 @@
 <meta property='og:description' content='你不觉得图文无关很酷么？'>
 <meta property='og:url' content='https://oxidane-uni.github.io/p/%E4%BD%BF%E7%94%A8-hugo-%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E9%87%8D%E5%BB%BA%E4%B8%8E-stack-%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96%E8%AE%B0%E5%BD%95/'>
 <meta property='og:site_name' content='Exnadio&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2023-04-22T14:56:05&#43;08:00'/><meta property='article:modified_time' content='2023-11-18T17:23:35&#43;08:00'/><meta property='og:image' content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Hugo' /><meta property='article:published_time' content='2023-04-22T14:56:05&#43;08:00'/><meta property='article:modified_time' content='2024-07-17T23:44:09&#43;08:00'/><meta property='og:image' content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
 <meta name="twitter:title" content="使用 Hugo 对博客的重建与 Stack 主题优化记录">
 <meta name="twitter:description" content="你不觉得图文无关很酷么？"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://oxidane-uni.github.io/images/4featureimg/azl.jpg' />
@@ -384,8 +384,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E6%89%8B%E5%86%8C/" style="background-color: #2a9d8f; color: #fff;">
-                手册
+            <a href="/categories/%E6%8A%80%E6%9C%AF/" style="background-color: #2a9d8f; color: #fff;">
+                技术
             </a>
         
     </header>
@@ -431,7 +431,7 @@
 
 
 
-            <time class="article-lastmod">Nov 18, 2023</time>
+            <time class="article-lastmod">Jul 17, 2024</time>
         </div>
         
 
@@ -497,7 +497,7 @@
     >releases</a>和 Git 的<a class="link" href="https://git-scm.com/"  target="_blank" rel="noopener"
     >官网</a>都能很方便地下载。我选择的是 hugo_extended_0.111.2_windows-amd64.zip
 版本，以便后续折腾。下载完成后将压缩包里的东西解压至你喜欢的目录，再将该目录的路径添加到环境变量中以便后续调用。至于 Git 的安装，我就不再赘述了。<br>
-<img src="/images/4post/23422/path.png"
+<img src="/images/4post/230422/path.png"
 	
 	
 	
@@ -578,7 +578,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>即可建立一个本地服务器。<br>
-<img src="/images/4post/23422/hugoserver.png"
+<img src="/images/4post/230422/hugoserver.png"
 	
 	
 	
@@ -595,7 +595,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <code>hugo new post/rebuild_blog.md</code>
 打开后你会发现生成的Markdown文档带有一段FrontMatter部分，具体的意思可以在<a class="link" href="https://stack.jimmycai.com/writing/frontmatter"  target="_blank" rel="noopener"
     >这里</a>找到。大体上可以认为是文档的一些属性。<br>
-<img src="/images/4post/23422/frontmatter.png"
+<img src="/images/4post/230422/frontmatter.png"
 	
 	
 	
@@ -662,7 +662,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <p>已将评论系统改为giscus，配置过程见<a class="link" href="" >这里</a></p>
 <h2 id="stack主题自定义">Stack主题自定义</h2>
 <p>首先放一下对比图：<br>
-<img src="/images/4post/23422/lightmode_default.png"
+<img src="/images/4post/230422/lightmode_default.png"
 	
 	
 	
@@ -670,7 +670,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 	
 > <br>
-<img src="/images/4post/23422/lightmode_modified.png"
+<img src="/images/4post/230422/lightmode_modified.png"
 	
 	
 	
@@ -690,7 +690,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <p>因此，想要自定义就很简单了：找到你希望修改的元素和它对应的选择器，重新定义这个选择器即可。<br>
 万幸，目前的浏览器为我们提供了好用的开发者工具。以我现在使用的Edge为例，按下<code>F12</code>弹出开发者工具，使用左上角的小箭头使你的鼠标变成一个查看器(你也可以使用<code>SHIFT</code>+<code>CTRL</code>+<code>C</code>的组合键)，只要将光标置于你想修改的元素上，就能找到该元素的源代码。<br>
 例如我现在想改浅色模式下的文本颜色，只需选择一段文本,就能在右下角找到它对应的css:<br>
-<img src="/images/4post/23422/css_selected.png"
+<img src="/images/4post/230422/css_selected.png"
 	
 	
 	
@@ -698,7 +698,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 	
 ><br>
-<img src="/images/4post/23422/css_txt.png"
+<img src="/images/4post/230422/css_txt.png"
 	
 	
 	
@@ -708,7 +708,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 ><br>
 可以看到文本被指定为<code>---body-text-color</code>。<br>
 再顺藤摸瓜找到对应的颜色控制：<br>
-<img src="/images/4post/23422/css_color.png"
+<img src="/images/4post/230422/css_color.png"
 	
 	
 	
@@ -754,7 +754,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>此时就能达到这种效果了：<br>
-<img src="/images/4post/23422/lightmode_modified.png"
+<img src="/images/4post/230422/lightmode_modified.png"
 	
 	
 	
@@ -763,7 +763,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 ></p>
 <p>Tag的修改我也说下，用上面的方法找到代码，发现：<br>
-<img src="/images/4post/23422/tagcolorcode.png"
+<img src="/images/4post/230422/tagcolorcode.png"
 	
 	
 	
@@ -801,7 +801,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </div>
 </div><p><strong>Note:</strong><br>
 改完之后我发现分类的 Tag 还是存在问题，虽说前几个颜色是对的，但是越往后走居然开始变色了：<br>
-<img src="/images/4post/23422/case.png"
+<img src="/images/4post/230422/case.png"
 	
 	
 	
@@ -810,7 +810,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 ><br>
 此时即使在custom.scss中指定了颜色也没啥用，看了下这玩意居然在是element.style写死的，多少有点幽默：<br>
-<img src="/images/4post/23422/element_style.png"
+<img src="/images/4post/230422/element_style.png"
 	
 	
 	
@@ -980,7 +980,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 <p>Stack主题带了几个很好看的Tabler图标，可惜并不全，部分缺失的图标要手动添加。<br>
 例如我想添加一个比比汗丽丽的图标，在<a class="link" href="https://tabler-icons.io/"  target="_blank" rel="noopener"
     >Tabler官网</a>搜索发现居然真有：<br>
-<img src="/images/4post/23422/searchresult.png"
+<img src="/images/4post/230422/searchresult.png"
 	
 	
 	
@@ -989,7 +989,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 ><br>
 将svg文件其下载到<code>.\themes\hugo-theme-stack\assets\icons</code>中，再调用即可。<br>
-<img src="/images/4post/23422/implement.png"
+<img src="/images/4post/230422/implement.png"
 	
 	
 	
@@ -998,7 +998,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 	
 ></p>
 <p>另外，我也不是很喜欢自带的深色模式切换开关，以我个人的的观点来看，这玩意太不直观了：<br>
-<img src="/images/4post/23422/toggle.png"
+<img src="/images/4post/230422/toggle.png"
 	
 	
 	
@@ -1097,7 +1097,7 @@ Stack本身有全英文的<a class="link" href="https://stack.jimmycai.com/confi
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>效果如下：<br>
-<img src="/images/4post/23422/sun.png"
+<img src="/images/4post/230422/sun.png"
 	
 	
 	
@@ -1312,7 +1312,7 @@ Stack的文章页面是由三个html控制的：</p>
 <li><del>Category机制还没搞懂</del> <del>他妈的，实在搞不懂。</del> Fuck,that&rsquo;s a feature.</li>
 </ol>
 <p>以上，<strong>下次</strong>大概的确会修复！</p>
-<p><img src="/images/4post/23422/nextepisode.png"
+<p><img src="/images/4post/230422/nextepisode.png"
 	
 	
 	
@@ -1371,7 +1371,7 @@ Stack的文章页面是由三个html控制的：</p>
 
 
         <span>
-            最后更新于 Nov 18, 2023 17:23 CST
+            最后更新于 Jul 17, 2024 23:44 CST
         </span>
     </section></footer>
 
@@ -1388,18 +1388,23 @@ Stack的文章页面是由三个html控制的：</p>
                 src="https://cdn.jsdelivr.net/npm/katex@0.15.6/dist/contrib/auto-render.min.js"integrity="sha256-y39Mpg7V3D4lhBX4x6O0bUqTV4pSrfgwEfGKfxkOdgI="crossorigin="anonymous"
                 defer
                 >
-            </script><script>
-    window.addEventListener("DOMContentLoaded", () => {
-        renderMathInElement(document.querySelector(`.article-content`), {
-            delimiters: [
-                { left: "$$", right: "$$", display: true },
-                { left: "$", right: "$", display: false },
-                { left: "\\(", right: "\\)", display: false },
-                { left: "\\[", right: "\\]", display: true }
-            ],
-            ignoredClasses: ["gist"]
-        });})
+            </script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js" integrity="sha384-YNHdsYkH6gMx9y3mRkmcJ2mFUjTd0qNQQvY9VYZgQd7DcN7env35GzlmFaZ23JGp" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js" integrity="sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          throwOnError : false
+        });
+    });
 </script>
+
     
 </article>
 
@@ -1411,6 +1416,25 @@ Stack的文章页面是由三个html控制的：</p>
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/p/%E8%8B%B9%E6%9E%9C-powerbook-48pin-scsi-%E7%A1%AC%E7%9B%98%E6%8E%A5%E5%8F%A3%E6%8E%A2%E7%A9%B6/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="/images/4featureimg/6ZMRZKdA2Yf3jfKD.jpg" loading="lazy" data-key="" data-hash="/images/4featureimg/6ZMRZKdA2Yf3jfKD.jpg"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">苹果 PowerBook 48pin SCSI 硬盘接口探究</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
@@ -1438,22 +1462,23 @@ Stack的文章页面是由三个html控制的：</p>
      
     
         
-    <script src="https://giscus.app/client.js"
-        data-repo="oxidane-uni/forBlogdiscussions"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkzODk2MzU4OTc="
-        data-category="Announcements"
-        data-category-id="DIC_kwDOFzlfOc4CbDbw"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-</script>
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="oxidane-uni/forBlogdiscussions"
+    data-repo-id="MDEwOlJlcG9zaXRvcnkzODk2MzU4OTc="
+    data-category="Announcements"
+    data-category-id="DIC_kwDOFzlfOc4CbDbw"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="en"
+    crossorigin="anonymous"
+    data-loading="lazy"
+    async
+></script>
 <script>
     function setGiscusTheme(theme) {
         let giscus = document.querySelector("iframe.giscus-frame");
@@ -1496,12 +1521,12 @@ Stack的文章页面是由三个html控制的：</p>
         
             2020 - 
         
-        2023 Exnadio&#39;s Blog
+        2024 Exnadio&#39;s Blog
     </section>
     
     <section class="powerby">
         
-            与博客和解。 <br/>
+            与博客和解 & In memory of Coremint。 <br/>
         Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
         主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.16.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
     </section>

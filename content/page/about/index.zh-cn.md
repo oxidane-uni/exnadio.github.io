@@ -10,4 +10,4 @@ menu:
             icon: user
 ---
 
-**优质韭菜**
+**IDK**

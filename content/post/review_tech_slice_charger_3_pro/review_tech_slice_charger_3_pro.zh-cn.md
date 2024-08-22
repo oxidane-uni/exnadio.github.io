@@ -8,38 +8,38 @@ math: true
 categories: 
   - 评测
 tags:
-  - Tech
+  - 数码
   - 充电头
 draft: false
 ---
-![](./images/4post/23502/adapter_nga.jpg)  
+![](./images/4post/230502/adapter_nga.jpg)  
 头图来自[充电头网](https://www.chongdiantou.com/archives/226291.html),拍得比我好多了，偷！  
 本次评测的为一家“小而美”的小厂库存无线充电板 ~~简称，洋垃圾~~。感觉设计挺有果味，就买了。  
 
 ## 关于“Hardcider Labs”
 由于这玩意我是真的很喜欢，所以稍微去查了下这个“HardCider Labs”。根据他们寥寥无几的介绍，这是一个果式配件商，其余我就再也查不到了。
 这小厂的官网虽然还在：  
-![](./images/4post/23502/hardciderwebsite2.png)  
+![](./images/4post/230502/hardciderwebsite2.png)  
 但是我觉得这厂应该已经跑路了，网站上挂的优惠码还是2022的，Twitter官号也没更新过了，乐。基本所有的商品都是sold out状态，现在还能买的就是一款Apple watch的表带......  
-![](./images/4post/23502/harciderwebsite1.png)  
+![](./images/4post/230502/harciderwebsite1.png)  
 我猜这玩意估计是啥Kickstarter品牌，但是不得不说，做的玩意看上去都不错。
-![](./images/4post/23502/hardciderwebsite3.png)  
+![](./images/4post/230502/hardciderwebsite3.png)  
 
 ## 开箱与功能介绍
 ### 开箱
 虽说是“洋垃圾”，但是我买到的是“原盒原封”，所以还是当个普通用户，来一次“开箱体验”：  
-![](./images/4post/23502/openboxslp1.jpg)  
+![](./images/4post/230502/openboxslp1.jpg)  
 包装就是个蛮精致的黑色天地盖纸盒，印有一些介绍，但我得说一句，我寻思你这Qi充电器怎么能触发iPhone的MagSafe动画？  
 打开盒子，迎接我们的便是说明书和充电器的主体：
-![](./images/4post/23502/openboxslp2.png)  
+![](./images/4post/230502/openboxslp2.png)  
 说明书有一堆洋文，但是就是没中文，一看就是出口的玩意：  
-![](./images/4post/23502/man1.jpg)  
-![](./images/4post/23502/man2.jpg)  
-![](./images/4post/23502/man3.jpg)  
+![](./images/4post/230502/man1.jpg)  
+![](./images/4post/230502/man2.jpg)  
+![](./images/4post/230502/man3.jpg)  
 不过这说明书上也就写到iPhone 12,不知道是什么时候的库存,另外接口标注也是错的，30W标成18W ~~真就小厂~~。  
 充电器本体的用料倒是非常舍得：全金属机身、布面工艺正面，使得我不能不给出一个“性感”的评价，做工实在是符合其原价150刀的水准，“漂亮得不像实力派”。  
 取出塑料隔板后便是适配器和四个不同供电规格的更换插座：  
-![](./images/4post/23502/openboxslp3.png)  
+![](./images/4post/230502/openboxslp3.png)  
 总体而言这开箱体验确实不错，优秀水平。
 
 ### 功能  
@@ -48,59 +48,59 @@ draft: false
 #### 无线端  
 正面是无线充电区域，最大可同时支持三台Qi协议设备进行充电。  
 以及一个可旋转的Mfi Apple Watch充电器（需要注意的是，当这玩意翻起时便会与一个充电位冲突，此时该充电位就只能放TWS之类的小玩意了）。  
-![](./images/4post/23502/scenario1.jpg)
-![](./images/4post/23502/scenario2.jpg)
+![](./images/4post/230502/scenario1.jpg)
+![](./images/4post/230502/scenario2.jpg)
 值得好评的是它的侧面带有三个指示灯，可以指示充电状态：比如右边正在充电就会亮右边的灯。
-![](./images/4post/23502/indicator.jpg)
+![](./images/4post/230502/indicator.jpg)
 #### 有线端 
 侧面的另一侧便是有线的输入/输出端，分别是**DC in**、**USB A**、**USB C** (从左到右)
-![](./images/4post/23502/ports.jpg)  
+![](./images/4post/230502/ports.jpg)  
 其中USB A支持最高18w的QC 3.0快充，USB C则在此基础上支持最高30w的PD。  
 具体的协议支持之后再补充。  
 不过我有一点要说，怎么定位低一档的Slicecharge3的母口胶芯都能做到相同，到这个更加高端定位的Pro版本上就拉了呢？
-![](./images/4post/23502/compare.jpg)
+![](./images/4post/230502/compare.jpg)
 #### 适配器  
 适配器DC口，最大输出大概就是65w（我寻思15v直接用PD不就行），支持100v~240V宽幅输入，体积也很大。65w倒也是够用，但是严格来说绝对不能支撑这玩意最大功率（30+18+5+3*10w）输出（我觉得这玩意也没啥满功率场景）。  
 提供了美规、澳规、欧规、英规接口，它甚至是编！织！线！
-![](./images/4post/23502/adapter.jpg)  
+![](./images/4post/230502/adapter.jpg)  
 > 编织线就是好文明  
 
 装上插脚后，这玩意的高度就进一步膨胀：
-![](./images/4post/23502/adapter2.jpg)   
+![](./images/4post/230502/adapter2.jpg)   
 虽然美规的二脚插脚与我国插座通用，但我也不建议您使用这个插脚，相反，我推荐您使用不那么通用（可能打不开部分新国标插座的安全门） 的澳标。  
 为什么呢？因为这玩意体积大得一批，再加上插脚与本体极高的间隙，这玩意使用美规插座时就跟个跷跷板一样，笑死。
-![](./images/4post/23502/adapter3.jpg)  
-![](./images/4post/23502/adapter4.jpg)  
+![](./images/4post/230502/adapter3.jpg)  
+![](./images/4post/230502/adapter4.jpg)  
 > 你可以想象没这点横向支持这玩意能晃成啥样  
 
 顺带一提，这玩意的供应商居然是[深圳新斯宝](http://www.xinspower.cn/a653_65w%E7%B3%BB%E5%88%97_86298/a653-xxxyyyyi.html),不过应该是特制了编织线。  
-![](./images/4post/23502/xinspower.png)  
+![](./images/4post/230502/xinspower.png)  
   
 
 最后，背后就没啥玩意了，只有两条长防滑垫和铭牌:  
-![](./images/4post/23502/back.jpg)  
+![](./images/4post/230502/back.jpg)  
 铭牌居然还是镜面，精致感确实足。
-![](./images/4post/23502/dataplate.jpg)  
+![](./images/4post/230502/dataplate.jpg)  
 
 ## 内部结构 
 由于我不会拆~~也舍不得拆~~，因此就使用卖家提供的拆解图片了。  
-![](./images/4post/23502/teardown2.JPG)  
+![](./images/4post/230502/teardown2.JPG)  
 可以看到，这玩意虽然是“多线圈”，但是与Airpower、Tesla和小米之类的解决方案可谓是有云泥之别：别人使用了多层线圈来实现“全覆盖”“放哪都能充”，而Hardcider Labs的这款线圈数量仅相当于别人的一层。  
-![“Airpower”](./images/4post/23502/airpower.jpg)  
-![xiaomi](./images/4post/23502/xiaomi.jpg)  
-![Hardciderlabs](./images/4post/23502/teardown.png)  
+![“Airpower”](./images/4post/230502/airpower.jpg)  
+![xiaomi](./images/4post/230502/xiaomi.jpg)  
+![Hardciderlabs](./images/4post/230502/teardown.png)  
 > 从上至下：Airpower工程机、小米多线圈、Hard Cider Labs  
 
 当然这也有好处，那就是免去了大量工程设计的问题，不像果子一样丧心病狂地打算在无线充电板上塞上A11来解决发热与多线圈协调问题 ~~笑了，搞得跟iPhone发热问题解决了一样~~ 。当然果子最后的解决方案Magsafe也是个纯逆天。  
 比较搞笑的是这玩意实现made for apple watch充电的方法居然是在内部做了个USB type A接口，实在是有点逆天。  
 > 其实这倒也不难理解，apple watch的mfi认证出货的应该就是一整个充电模组  
 
-![](./images/4post/23502/teardown3.JPG)  
+![](./images/4post/230502/teardown3.JPG)  
 内部芯片用料倒是难称豪华：采用了方昕科技（别说，名字不错）的NKola 9018。不过我也不锐评了，反正也懂都不懂（又不是不能用.jpg）。  
-![](./images/4post/23502/n9018.png)
+![](./images/4post/230502/n9018.png)
 不过我在找data sheet的时候发现了这公司本身就提供公版方案，看来这小厂也就搞了个外壳设计，笑死。
-![](./images/4post/23502/n9018solution.png)
-![](./images/4post/23502/teardown.png) 
+![](./images/4post/230502/n9018solution.png)
+![](./images/4post/230502/teardown.png) 
 > 一眼丁真，鉴定为公版  
 
 至于散热就靠金属外壳被动散热硬挺了，效果还不错。
@@ -110,7 +110,7 @@ draft: false
 
 ### 对于充电器的体验
 作为一个“多线圈无线充电器” ，它最大的优点就是多设备充电支持，同时宽裕的空间使得它是“两台设备随便放，三台设备规矩放”，体验虽说不及真·多线圈，但也算舒服。  
-![](./images/4post/23502/1223.jpeg)   
+![](./images/4post/230502/1223.jpeg)   
 > 这里忘拍图了，偷几张充电头网的
 
 对于这玩意我是没什么缺点可挑，毕竟该给它给的也差不多了：**其定位更像是一个桌面的充电 All in One，有线无线都有，做工设计都很不错，也符合它“高端手机配件商”的定位**。但要说可改进的点的话，那还真不少：
@@ -129,17 +129,17 @@ draft: false
 首先，无线充电绝没有它听起来的那般美好：放上手机，充好，拿走，去他妈的线，我们“极客”的桌面讲究的就是一个,啊,整洁。  
 理论上你能拿到一台满电的、和你放上去时一样的手机，实际上你会拿到一台很烫的的手机——一句话概括iPhone无线充电体验。  
 虽然iPhone已经有了专有的无线充电方案——Magsafe（🤣👉“22.5w"），但是库克大人还是大发慈悲，兼容着Qi协议这高低也算是自己写的协议（另一个您发起的接口怎么需要10年来改变呢？），但是iPhone的无线充电体验实在是不太“优雅”。**iPhone低能的充电、散热设计和低效的无线充电可谓是一对Best Match**：即使功率7.5w，iPhone也能稳定发热到到烫手的程度。  
-![](./images/4post/23502/kidding.png)  
+![](./images/4post/230502/kidding.png)  
 > 我不知道充电头网这温度怎么测的，逆天，而且哪来的磁吸？
 
 虽然有这么多的手机厂商做无线充电，但是其实各个厂商的线圈位置不尽相同，在一台手机上能充电的线圈位置，在另一台手机上就不一定能充上。这就需要你去对准无线充的线圈，不是随手一放就行。这玩意至少是个单层多线圈，相对而言可以更随意，但是做不到真·多线圈的“放下不管”，这个问题在立式无线充上更甚。  
 比如这玩意就有配套的支架，磁吸在那个精致的铭牌处便可变身立式无线充：  
-![](./images/4post/23502/stand.jpg)  
+![](./images/4post/230502/stand.jpg)  
 > 这鬼东西30刀我擦  
 当然我捡垃圾的地方也在买，25一套，没抢到，不然我高低也整一套评测。  
 
 装好是这样的：
-![](./images/4post/23502/extendedslc.jpg)  
+![](./images/4post/230502/extendedslc.jpg)  
 就评价来看，即使做了高低调节，这玩意也能只支持几台特定型号的iPhone，像米13U那样的贵物是想都别想。所以说无线充的终点还是Airpower式的真·多线圈。  
 同时无线充电也受保护壳的影响，我手上的几台设备都受了保护壳的影响，无法完整地完成充电（我不清楚是不是这个充电器的个体问题，之后再测）。比如Airpods就经常充不上电，乐所以（这时候你就能理解指示灯的好）。    
 当然安卓这就好不少，发热也有，但至少没有iPhone低能（以我手上的这台 LG G7 来说）。~~库克！乔布斯！~~  
